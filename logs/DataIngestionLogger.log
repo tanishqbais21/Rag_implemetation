@@ -1,0 +1,1745 @@
+2026-06-13 10:39:58,263 | DataIngestionLogger | INFO | Loading PDF files from directory: data
+2026-06-13 10:39:58,263 | DataIngestionLogger | INFO | Found 2 PDF files in directory: data
+2026-06-13 10:39:58,263 | DataIngestionLogger | INFO | Loading PDF file: data/HarryPotterSorcersStone_Excerpt.pdf
+2026-06-13 10:39:58,393 | DataIngestionLogger | INFO | Loading PDF file: data/(Book 3) Harry Potter And The Prisoner Of Azkaban_001.pdf
+2026-06-13 10:48:16,360 | DataIngestionLogger | INFO | Loading PDF files from directory: data
+2026-06-13 10:48:16,360 | DataIngestionLogger | INFO | Found 2 PDF files in directory: data
+2026-06-13 10:48:16,360 | DataIngestionLogger | INFO | Loading PDF file: data/HarryPotterSorcersStone_Excerpt.pdf
+2026-06-13 10:48:16,489 | DataIngestionLogger | INFO | Loading PDF file: data/(Book 3) Harry Potter And The Prisoner Of Azkaban_001.pdf
+2026-06-13 10:55:08,963 | DataIngestionLogger | INFO | Loading PDF files from directory: data
+2026-06-13 10:55:08,963 | DataIngestionLogger | INFO | Found 2 PDF files in directory: data
+2026-06-13 10:55:08,963 | DataIngestionLogger | INFO | Loading PDF file: data/HarryPotterSorcersStone_Excerpt.pdf
+2026-06-13 10:55:09,127 | DataIngestionLogger | INFO | Loading PDF file: data/(Book 3) Harry Potter And The Prisoner Of Azkaban_001.pdf
+2026-06-13 12:02:19,760 | DataIngestionLogger | INFO | Starting data ingestion pipeline.
+2026-06-13 12:02:19,761 | DataIngestionLogger | ERROR | Error running data ingestion pipeline: 'DataIngestionPipeline' object has no attribute 'load_pdf'
+Traceback (most recent call last):
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 126, in run_pipeline
+    documents = self.load_pdf(file_path)
+                ^^^^^^^^^^^^^
+AttributeError: 'DataIngestionPipeline' object has no attribute 'load_pdf'. Did you mean: '_load_pdf'?
+2026-06-13 12:03:37,066 | DataIngestionLogger | INFO | Starting data ingestion pipeline.
+2026-06-13 12:03:37,066 | DataIngestionLogger | INFO | Loading PDF files from directory: data
+2026-06-13 12:03:37,067 | DataIngestionLogger | INFO | Found 2 PDF files in directory: data
+2026-06-13 12:03:37,067 | DataIngestionLogger | INFO | Loading PDF file: data/HarryPotterSorcersStone_Excerpt.pdf
+2026-06-13 12:03:37,244 | DataIngestionLogger | INFO | Loading PDF file: data/(Book 3) Harry Potter And The Prisoner Of Azkaban_001.pdf
+2026-06-13 12:03:37,743 | DataIngestionLogger | INFO | Data ingestion pipeline completed. Loaded 394 documents.
+2026-06-13 12:03:37,744 | DataIngestionLogger | ERROR | Error running data ingestion pipeline: 'DataIngestionPipeline' object has no attribute 'split_documents'
+Traceback (most recent call last):
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 128, in run_pipeline
+    split_documents = self.split_documents(documents)
+                      ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataIngestionPipeline' object has no attribute 'split_documents'. Did you mean: '_split_documents'?
+2026-06-13 12:04:21,421 | DataIngestionLogger | INFO | Starting data ingestion pipeline.
+2026-06-13 12:04:21,421 | DataIngestionLogger | INFO | Loading PDF files from directory: data
+2026-06-13 12:04:21,421 | DataIngestionLogger | INFO | Found 2 PDF files in directory: data
+2026-06-13 12:04:21,421 | DataIngestionLogger | INFO | Loading PDF file: data/HarryPotterSorcersStone_Excerpt.pdf
+2026-06-13 12:04:21,554 | DataIngestionLogger | INFO | Loading PDF file: data/(Book 3) Harry Potter And The Prisoner Of Azkaban_001.pdf
+2026-06-13 12:04:22,049 | DataIngestionLogger | INFO | Data ingestion pipeline completed. Loaded 394 documents.
+2026-06-13 12:04:22,049 | DataIngestionLogger | ERROR | Error running data ingestion pipeline: 'DataIngestionPipeline' object has no attribute 'split_documents'
+Traceback (most recent call last):
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 128, in run_pipeline
+    split_documents = self.split_documents(documents)
+                      ^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DataIngestionPipeline' object has no attribute 'split_documents'. Did you mean: '_split_documents'?
+2026-06-13 12:04:39,403 | DataIngestionLogger | INFO | Starting data ingestion pipeline.
+2026-06-13 12:04:39,403 | DataIngestionLogger | INFO | Loading PDF files from directory: data
+2026-06-13 12:04:39,403 | DataIngestionLogger | INFO | Found 2 PDF files in directory: data
+2026-06-13 12:04:39,403 | DataIngestionLogger | INFO | Loading PDF file: data/HarryPotterSorcersStone_Excerpt.pdf
+2026-06-13 12:04:39,539 | DataIngestionLogger | INFO | Loading PDF file: data/(Book 3) Harry Potter And The Prisoner Of Azkaban_001.pdf
+2026-06-13 12:04:40,036 | DataIngestionLogger | INFO | Data ingestion pipeline completed. Loaded 394 documents.
+2026-06-13 12:04:40,036 | DataIngestionLogger | INFO | Splitting 394 documents into chunks.
+2026-06-13 12:04:40,036 | DataIngestionLogger | ERROR | Error running data ingestion pipeline: 'DataIngestionPipeline' object has no attribute 'count_tokens'
+Traceback (most recent call last):
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 128, in run_pipeline
+    split_documents = self._split_documents(documents)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 108, in _split_documents
+    length_function=self.count_tokens
+                    ^^^^^^^^^^^^^^^^^
+AttributeError: 'DataIngestionPipeline' object has no attribute 'count_tokens'. Did you mean: '_count_tokens'?
+2026-06-13 12:05:19,057 | DataIngestionLogger | INFO | Starting data ingestion pipeline.
+2026-06-13 12:05:19,057 | DataIngestionLogger | INFO | Loading PDF files from directory: data
+2026-06-13 12:05:19,057 | DataIngestionLogger | INFO | Found 2 PDF files in directory: data
+2026-06-13 12:05:19,057 | DataIngestionLogger | INFO | Loading PDF file: data/HarryPotterSorcersStone_Excerpt.pdf
+2026-06-13 12:05:19,215 | DataIngestionLogger | INFO | Loading PDF file: data/(Book 3) Harry Potter And The Prisoner Of Azkaban_001.pdf
+2026-06-13 12:05:19,715 | DataIngestionLogger | INFO | Data ingestion pipeline completed. Loaded 394 documents.
+2026-06-13 12:05:19,715 | DataIngestionLogger | INFO | Splitting 394 documents into chunks.
+2026-06-13 12:05:20,164 | DataIngestionLogger | INFO | Completed splitting documents. Total chunks created: 392
+2026-06-13 12:05:20,164 | DataIngestionLogger | INFO | Loading pre-trained model: all-MiniLM-L6-v2
+2026-06-13 12:05:26,054 | DataIngestionLogger | INFO | Successfully loaded model: all-MiniLM-L6-v2 with embedding dimension: 384
+2026-06-13 12:05:26,054 | DataIngestionLogger | ERROR | Error generating embeddings: Model is not loaded. Please load the model before generating embeddings.
+Traceback (most recent call last):
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 43, in generate_embeddings
+    raise ValueError("Model is not loaded. Please load the model before generating embeddings.")
+ValueError: Model is not loaded. Please load the model before generating embeddings.
+2026-06-13 12:05:26,054 | DataIngestionLogger | ERROR | Error running data ingestion pipeline: Model is not loaded. Please load the model before generating embeddings.
+Traceback (most recent call last):
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 130, in run_pipeline
+    numpy_embeddings = [self.generate_embeddings(doc.page_content, self.model) for doc in split_documents]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 50, in generate_embeddings
+    raise e
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 43, in generate_embeddings
+    raise ValueError("Model is not loaded. Please load the model before generating embeddings.")
+ValueError: Model is not loaded. Please load the model before generating embeddings.
+2026-06-13 12:06:00,321 | DataIngestionLogger | INFO | Starting data ingestion pipeline.
+2026-06-13 12:06:00,322 | DataIngestionLogger | INFO | Loading PDF files from directory: data
+2026-06-13 12:06:00,322 | DataIngestionLogger | INFO | Found 2 PDF files in directory: data
+2026-06-13 12:06:00,322 | DataIngestionLogger | INFO | Loading PDF file: data/HarryPotterSorcersStone_Excerpt.pdf
+2026-06-13 12:06:00,466 | DataIngestionLogger | INFO | Loading PDF file: data/(Book 3) Harry Potter And The Prisoner Of Azkaban_001.pdf
+2026-06-13 12:06:00,975 | DataIngestionLogger | INFO | Data ingestion pipeline completed. Loaded 394 documents.
+2026-06-13 12:06:00,975 | DataIngestionLogger | INFO | Splitting 394 documents into chunks.
+2026-06-13 12:06:01,380 | DataIngestionLogger | INFO | Completed splitting documents. Total chunks created: 392
+2026-06-13 12:06:01,380 | DataIngestionLogger | INFO | Loading pre-trained model: all-MiniLM-L6-v2
+2026-06-13 12:06:06,870 | DataIngestionLogger | INFO | Successfully loaded model: all-MiniLM-L6-v2 with embedding dimension: 384
+2026-06-13 12:06:06,871 | DataIngestionLogger | ERROR | Error generating embeddings: Model is not loaded. Please load the model before generating embeddings.
+Traceback (most recent call last):
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 43, in generate_embeddings
+    raise ValueError("Model is not loaded. Please load the model before generating embeddings.")
+ValueError: Model is not loaded. Please load the model before generating embeddings.
+2026-06-13 12:06:06,871 | DataIngestionLogger | ERROR | Error running data ingestion pipeline: Model is not loaded. Please load the model before generating embeddings.
+Traceback (most recent call last):
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 130, in run_pipeline
+    numpy_embeddings = [self.generate_embeddings(doc.page_content, self.model) for doc in split_documents]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 50, in generate_embeddings
+    raise e
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 43, in generate_embeddings
+    raise ValueError("Model is not loaded. Please load the model before generating embeddings.")
+ValueError: Model is not loaded. Please load the model before generating embeddings.
+2026-06-13 12:06:29,603 | DataIngestionLogger | INFO | Starting data ingestion pipeline.
+2026-06-13 12:06:29,603 | DataIngestionLogger | INFO | Loading PDF files from directory: data
+2026-06-13 12:06:29,604 | DataIngestionLogger | INFO | Found 2 PDF files in directory: data
+2026-06-13 12:06:29,604 | DataIngestionLogger | INFO | Loading PDF file: data/HarryPotterSorcersStone_Excerpt.pdf
+2026-06-13 12:06:29,742 | DataIngestionLogger | INFO | Loading PDF file: data/(Book 3) Harry Potter And The Prisoner Of Azkaban_001.pdf
+2026-06-13 12:06:30,239 | DataIngestionLogger | INFO | Data ingestion pipeline completed. Loaded 394 documents.
+2026-06-13 12:06:30,239 | DataIngestionLogger | INFO | Splitting 394 documents into chunks.
+2026-06-13 12:06:30,679 | DataIngestionLogger | INFO | Completed splitting documents. Total chunks created: 392
+2026-06-13 12:06:30,679 | DataIngestionLogger | INFO | Loading pre-trained model: all-MiniLM-L6-v2
+2026-06-13 12:06:36,134 | DataIngestionLogger | INFO | Successfully loaded model: all-MiniLM-L6-v2 with embedding dimension: 384
+2026-06-13 12:06:36,134 | DataIngestionLogger | ERROR | Error generating embeddings: Model is not loaded. Please load the model before generating embeddings.
+Traceback (most recent call last):
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 43, in generate_embeddings
+    raise ValueError("Model is not loaded. Please load the model before generating embeddings.")
+ValueError: Model is not loaded. Please load the model before generating embeddings.
+2026-06-13 12:06:36,135 | DataIngestionLogger | ERROR | Error running data ingestion pipeline: Model is not loaded. Please load the model before generating embeddings.
+Traceback (most recent call last):
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 130, in run_pipeline
+    numpy_embeddings = [self.generate_embeddings(doc.page_content, self.model) for doc in split_documents]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 50, in generate_embeddings
+    raise e
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 43, in generate_embeddings
+    raise ValueError("Model is not loaded. Please load the model before generating embeddings.")
+ValueError: Model is not loaded. Please load the model before generating embeddings.
+2026-06-13 12:09:03,821 | DataIngestionLogger | INFO | Starting data ingestion pipeline.
+2026-06-13 12:09:03,821 | DataIngestionLogger | INFO | Loading PDF files from directory: data
+2026-06-13 12:09:03,821 | DataIngestionLogger | INFO | Found 2 PDF files in directory: data
+2026-06-13 12:09:03,821 | DataIngestionLogger | INFO | Loading PDF file: data/HarryPotterSorcersStone_Excerpt.pdf
+2026-06-13 12:09:03,960 | DataIngestionLogger | INFO | Loading PDF file: data/(Book 3) Harry Potter And The Prisoner Of Azkaban_001.pdf
+2026-06-13 12:09:04,458 | DataIngestionLogger | INFO | Data ingestion pipeline completed. Loaded 394 documents.
+2026-06-13 12:09:04,458 | DataIngestionLogger | INFO | Splitting 394 documents into chunks.
+2026-06-13 12:09:04,869 | DataIngestionLogger | INFO | Completed splitting documents. Total chunks created: 392
+2026-06-13 12:09:04,870 | DataIngestionLogger | ERROR | Error generating embeddings: Model is not loaded. Please load the model before generating embeddings.
+Traceback (most recent call last):
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 43, in generate_embeddings
+    raise ValueError("Model is not loaded. Please load the model before generating embeddings.")
+ValueError: Model is not loaded. Please load the model before generating embeddings.
+2026-06-13 12:09:04,870 | DataIngestionLogger | ERROR | Error running data ingestion pipeline: Model is not loaded. Please load the model before generating embeddings.
+Traceback (most recent call last):
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 129, in run_pipeline
+    numpy_embeddings = [self.generate_embeddings(doc.page_content) for doc in split_documents]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 50, in generate_embeddings
+    raise e
+  File "/Users/tanishq/AI_Study/Project_1/Data_ingestion/load_data.py", line 43, in generate_embeddings
+    raise ValueError("Model is not loaded. Please load the model before generating embeddings.")
+ValueError: Model is not loaded. Please load the model before generating embeddings.
+2026-06-13 12:11:07,199 | DataIngestionLogger | INFO | Starting data ingestion pipeline.
+2026-06-13 12:11:07,199 | DataIngestionLogger | INFO | Loading PDF files from directory: data
+2026-06-13 12:11:07,199 | DataIngestionLogger | INFO | Found 2 PDF files in directory: data
+2026-06-13 12:11:07,199 | DataIngestionLogger | INFO | Loading PDF file: data/HarryPotterSorcersStone_Excerpt.pdf
+2026-06-13 12:11:07,337 | DataIngestionLogger | INFO | Loading PDF file: data/(Book 3) Harry Potter And The Prisoner Of Azkaban_001.pdf
+2026-06-13 12:11:07,850 | DataIngestionLogger | INFO | Data ingestion pipeline completed. Loaded 394 documents.
+2026-06-13 12:11:07,850 | DataIngestionLogger | INFO | Splitting 394 documents into chunks.
+2026-06-13 12:11:08,263 | DataIngestionLogger | INFO | Completed splitting documents. Total chunks created: 392
+2026-06-13 12:11:08,263 | DataIngestionLogger | INFO | Loading pre-trained model: all-MiniLM-L6-v2
+2026-06-13 12:11:13,692 | DataIngestionLogger | INFO | Successfully loaded model: all-MiniLM-L6-v2 with embedding dimension: 384
+2026-06-13 12:11:13,693 | DataIngestionLogger | INFO | Generating embeddings for text of length 37
+2026-06-13 12:11:14,963 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:14,963 | DataIngestionLogger | INFO | Generating embeddings for text of length 382
+2026-06-13 12:11:15,122 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,122 | DataIngestionLogger | INFO | Generating embeddings for text of length 137
+2026-06-13 12:11:15,213 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,213 | DataIngestionLogger | INFO | Generating embeddings for text of length 2001
+2026-06-13 12:11:15,375 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,375 | DataIngestionLogger | INFO | Generating embeddings for text of length 275
+2026-06-13 12:11:15,464 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,464 | DataIngestionLogger | INFO | Generating embeddings for text of length 303
+2026-06-13 12:11:15,470 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,470 | DataIngestionLogger | INFO | Generating embeddings for text of length 37
+2026-06-13 12:11:15,475 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,475 | DataIngestionLogger | INFO | Generating embeddings for text of length 905
+2026-06-13 12:11:15,656 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,656 | DataIngestionLogger | INFO | Generating embeddings for text of length 1698
+2026-06-13 12:11:15,666 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,666 | DataIngestionLogger | INFO | Generating embeddings for text of length 1804
+2026-06-13 12:11:15,672 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,672 | DataIngestionLogger | INFO | Generating embeddings for text of length 1672
+2026-06-13 12:11:15,678 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,678 | DataIngestionLogger | INFO | Generating embeddings for text of length 1672
+2026-06-13 12:11:15,684 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,684 | DataIngestionLogger | INFO | Generating embeddings for text of length 1749
+2026-06-13 12:11:15,690 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,690 | DataIngestionLogger | INFO | Generating embeddings for text of length 1516
+2026-06-13 12:11:15,696 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,696 | DataIngestionLogger | INFO | Generating embeddings for text of length 1787
+2026-06-13 12:11:15,702 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,703 | DataIngestionLogger | INFO | Generating embeddings for text of length 1782
+2026-06-13 12:11:15,708 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,708 | DataIngestionLogger | INFO | Generating embeddings for text of length 1598
+2026-06-13 12:11:15,714 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,714 | DataIngestionLogger | INFO | Generating embeddings for text of length 1682
+2026-06-13 12:11:15,720 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,720 | DataIngestionLogger | INFO | Generating embeddings for text of length 1639
+2026-06-13 12:11:15,726 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,726 | DataIngestionLogger | INFO | Generating embeddings for text of length 1728
+2026-06-13 12:11:15,732 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,732 | DataIngestionLogger | INFO | Generating embeddings for text of length 1559
+2026-06-13 12:11:15,738 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,738 | DataIngestionLogger | INFO | Generating embeddings for text of length 1540
+2026-06-13 12:11:15,744 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,744 | DataIngestionLogger | INFO | Generating embeddings for text of length 1585
+2026-06-13 12:11:15,750 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,750 | DataIngestionLogger | INFO | Generating embeddings for text of length 800
+2026-06-13 12:11:15,861 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,861 | DataIngestionLogger | INFO | Generating embeddings for text of length 2037
+2026-06-13 12:11:15,868 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,868 | DataIngestionLogger | INFO | Generating embeddings for text of length 2249
+2026-06-13 12:11:15,875 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,875 | DataIngestionLogger | INFO | Generating embeddings for text of length 1421
+2026-06-13 12:11:15,883 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,883 | DataIngestionLogger | INFO | Generating embeddings for text of length 2153
+2026-06-13 12:11:15,889 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,889 | DataIngestionLogger | INFO | Generating embeddings for text of length 2073
+2026-06-13 12:11:15,895 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,895 | DataIngestionLogger | INFO | Generating embeddings for text of length 1917
+2026-06-13 12:11:15,901 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,901 | DataIngestionLogger | INFO | Generating embeddings for text of length 1634
+2026-06-13 12:11:15,907 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,907 | DataIngestionLogger | INFO | Generating embeddings for text of length 1451
+2026-06-13 12:11:15,913 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,913 | DataIngestionLogger | INFO | Generating embeddings for text of length 1881
+2026-06-13 12:11:15,920 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,920 | DataIngestionLogger | INFO | Generating embeddings for text of length 1873
+2026-06-13 12:11:15,926 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,926 | DataIngestionLogger | INFO | Generating embeddings for text of length 1335
+2026-06-13 12:11:15,932 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,932 | DataIngestionLogger | INFO | Generating embeddings for text of length 1849
+2026-06-13 12:11:15,938 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,938 | DataIngestionLogger | INFO | Generating embeddings for text of length 1699
+2026-06-13 12:11:15,944 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,944 | DataIngestionLogger | INFO | Generating embeddings for text of length 1858
+2026-06-13 12:11:15,950 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,950 | DataIngestionLogger | INFO | Generating embeddings for text of length 1463
+2026-06-13 12:11:15,956 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,956 | DataIngestionLogger | INFO | Generating embeddings for text of length 1581
+2026-06-13 12:11:15,962 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,962 | DataIngestionLogger | INFO | Generating embeddings for text of length 1770
+2026-06-13 12:11:15,968 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,968 | DataIngestionLogger | INFO | Generating embeddings for text of length 1934
+2026-06-13 12:11:15,974 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,974 | DataIngestionLogger | INFO | Generating embeddings for text of length 1469
+2026-06-13 12:11:15,980 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,980 | DataIngestionLogger | INFO | Generating embeddings for text of length 1796
+2026-06-13 12:11:15,986 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,986 | DataIngestionLogger | INFO | Generating embeddings for text of length 1916
+2026-06-13 12:11:15,992 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,992 | DataIngestionLogger | INFO | Generating embeddings for text of length 1617
+2026-06-13 12:11:15,998 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:15,999 | DataIngestionLogger | INFO | Generating embeddings for text of length 1692
+2026-06-13 12:11:16,005 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,005 | DataIngestionLogger | INFO | Generating embeddings for text of length 1934
+2026-06-13 12:11:16,011 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,011 | DataIngestionLogger | INFO | Generating embeddings for text of length 1717
+2026-06-13 12:11:16,017 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,017 | DataIngestionLogger | INFO | Generating embeddings for text of length 2090
+2026-06-13 12:11:16,023 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,023 | DataIngestionLogger | INFO | Generating embeddings for text of length 1678
+2026-06-13 12:11:16,029 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,029 | DataIngestionLogger | INFO | Generating embeddings for text of length 1747
+2026-06-13 12:11:16,036 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,036 | DataIngestionLogger | INFO | Generating embeddings for text of length 1716
+2026-06-13 12:11:16,042 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,042 | DataIngestionLogger | INFO | Generating embeddings for text of length 1492
+2026-06-13 12:11:16,048 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,048 | DataIngestionLogger | INFO | Generating embeddings for text of length 1572
+2026-06-13 12:11:16,055 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,055 | DataIngestionLogger | INFO | Generating embeddings for text of length 1546
+2026-06-13 12:11:16,061 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,061 | DataIngestionLogger | INFO | Generating embeddings for text of length 1847
+2026-06-13 12:11:16,067 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,067 | DataIngestionLogger | INFO | Generating embeddings for text of length 1387
+2026-06-13 12:11:16,074 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,074 | DataIngestionLogger | INFO | Generating embeddings for text of length 1459
+2026-06-13 12:11:16,080 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,080 | DataIngestionLogger | INFO | Generating embeddings for text of length 1847
+2026-06-13 12:11:16,086 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,086 | DataIngestionLogger | INFO | Generating embeddings for text of length 1569
+2026-06-13 12:11:16,092 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,092 | DataIngestionLogger | INFO | Generating embeddings for text of length 1506
+2026-06-13 12:11:16,099 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,099 | DataIngestionLogger | INFO | Generating embeddings for text of length 1206
+2026-06-13 12:11:16,105 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,105 | DataIngestionLogger | INFO | Generating embeddings for text of length 1758
+2026-06-13 12:11:16,111 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,111 | DataIngestionLogger | INFO | Generating embeddings for text of length 2213
+2026-06-13 12:11:16,118 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,118 | DataIngestionLogger | INFO | Generating embeddings for text of length 1683
+2026-06-13 12:11:16,125 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,125 | DataIngestionLogger | INFO | Generating embeddings for text of length 1729
+2026-06-13 12:11:16,131 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,131 | DataIngestionLogger | INFO | Generating embeddings for text of length 1795
+2026-06-13 12:11:16,138 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,138 | DataIngestionLogger | INFO | Generating embeddings for text of length 1804
+2026-06-13 12:11:16,144 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,144 | DataIngestionLogger | INFO | Generating embeddings for text of length 1683
+2026-06-13 12:11:16,151 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,151 | DataIngestionLogger | INFO | Generating embeddings for text of length 1570
+2026-06-13 12:11:16,158 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,158 | DataIngestionLogger | INFO | Generating embeddings for text of length 1931
+2026-06-13 12:11:16,165 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,165 | DataIngestionLogger | INFO | Generating embeddings for text of length 1402
+2026-06-13 12:11:16,171 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,171 | DataIngestionLogger | INFO | Generating embeddings for text of length 1534
+2026-06-13 12:11:16,178 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,178 | DataIngestionLogger | INFO | Generating embeddings for text of length 1571
+2026-06-13 12:11:16,185 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,185 | DataIngestionLogger | INFO | Generating embeddings for text of length 1343
+2026-06-13 12:11:16,192 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,192 | DataIngestionLogger | INFO | Generating embeddings for text of length 1324
+2026-06-13 12:11:16,199 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,199 | DataIngestionLogger | INFO | Generating embeddings for text of length 1587
+2026-06-13 12:11:16,206 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,206 | DataIngestionLogger | INFO | Generating embeddings for text of length 1822
+2026-06-13 12:11:16,212 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,212 | DataIngestionLogger | INFO | Generating embeddings for text of length 1695
+2026-06-13 12:11:16,220 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,220 | DataIngestionLogger | INFO | Generating embeddings for text of length 1757
+2026-06-13 12:11:16,227 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,227 | DataIngestionLogger | INFO | Generating embeddings for text of length 1757
+2026-06-13 12:11:16,234 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,234 | DataIngestionLogger | INFO | Generating embeddings for text of length 1850
+2026-06-13 12:11:16,241 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,241 | DataIngestionLogger | INFO | Generating embeddings for text of length 1718
+2026-06-13 12:11:16,248 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,248 | DataIngestionLogger | INFO | Generating embeddings for text of length 1630
+2026-06-13 12:11:16,256 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,256 | DataIngestionLogger | INFO | Generating embeddings for text of length 1479
+2026-06-13 12:11:16,263 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,263 | DataIngestionLogger | INFO | Generating embeddings for text of length 1593
+2026-06-13 12:11:16,270 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,270 | DataIngestionLogger | INFO | Generating embeddings for text of length 1399
+2026-06-13 12:11:16,278 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,278 | DataIngestionLogger | INFO | Generating embeddings for text of length 1266
+2026-06-13 12:11:16,285 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,285 | DataIngestionLogger | INFO | Generating embeddings for text of length 982
+2026-06-13 12:11:16,293 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,293 | DataIngestionLogger | INFO | Generating embeddings for text of length 1615
+2026-06-13 12:11:16,301 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,301 | DataIngestionLogger | INFO | Generating embeddings for text of length 1401
+2026-06-13 12:11:16,308 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,308 | DataIngestionLogger | INFO | Generating embeddings for text of length 1579
+2026-06-13 12:11:16,316 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,316 | DataIngestionLogger | INFO | Generating embeddings for text of length 1831
+2026-06-13 12:11:16,324 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,324 | DataIngestionLogger | INFO | Generating embeddings for text of length 1880
+2026-06-13 12:11:16,332 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,332 | DataIngestionLogger | INFO | Generating embeddings for text of length 1733
+2026-06-13 12:11:16,340 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,340 | DataIngestionLogger | INFO | Generating embeddings for text of length 1543
+2026-06-13 12:11:16,348 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,348 | DataIngestionLogger | INFO | Generating embeddings for text of length 2037
+2026-06-13 12:11:16,357 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,357 | DataIngestionLogger | INFO | Generating embeddings for text of length 2012
+2026-06-13 12:11:16,365 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,365 | DataIngestionLogger | INFO | Generating embeddings for text of length 1906
+2026-06-13 12:11:16,373 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,373 | DataIngestionLogger | INFO | Generating embeddings for text of length 1677
+2026-06-13 12:11:16,382 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,382 | DataIngestionLogger | INFO | Generating embeddings for text of length 1501
+2026-06-13 12:11:16,391 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,391 | DataIngestionLogger | INFO | Generating embeddings for text of length 1748
+2026-06-13 12:11:16,402 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,402 | DataIngestionLogger | INFO | Generating embeddings for text of length 2045
+2026-06-13 12:11:16,414 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,414 | DataIngestionLogger | INFO | Generating embeddings for text of length 1841
+2026-06-13 12:11:16,426 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,426 | DataIngestionLogger | INFO | Generating embeddings for text of length 1792
+2026-06-13 12:11:16,436 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,436 | DataIngestionLogger | INFO | Generating embeddings for text of length 1885
+2026-06-13 12:11:16,445 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,445 | DataIngestionLogger | INFO | Generating embeddings for text of length 1459
+2026-06-13 12:11:16,455 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,455 | DataIngestionLogger | INFO | Generating embeddings for text of length 1590
+2026-06-13 12:11:16,464 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,464 | DataIngestionLogger | INFO | Generating embeddings for text of length 1863
+2026-06-13 12:11:16,475 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,475 | DataIngestionLogger | INFO | Generating embeddings for text of length 1666
+2026-06-13 12:11:16,485 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,485 | DataIngestionLogger | INFO | Generating embeddings for text of length 1541
+2026-06-13 12:11:16,495 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,495 | DataIngestionLogger | INFO | Generating embeddings for text of length 1645
+2026-06-13 12:11:16,507 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,507 | DataIngestionLogger | INFO | Generating embeddings for text of length 1577
+2026-06-13 12:11:16,517 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,518 | DataIngestionLogger | INFO | Generating embeddings for text of length 1817
+2026-06-13 12:11:16,528 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,529 | DataIngestionLogger | INFO | Generating embeddings for text of length 1479
+2026-06-13 12:11:16,541 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,541 | DataIngestionLogger | INFO | Generating embeddings for text of length 1655
+2026-06-13 12:11:16,553 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,553 | DataIngestionLogger | INFO | Generating embeddings for text of length 2035
+2026-06-13 12:11:16,565 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,565 | DataIngestionLogger | INFO | Generating embeddings for text of length 1646
+2026-06-13 12:11:16,578 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,578 | DataIngestionLogger | INFO | Generating embeddings for text of length 1531
+2026-06-13 12:11:16,591 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,591 | DataIngestionLogger | INFO | Generating embeddings for text of length 1735
+2026-06-13 12:11:16,605 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,605 | DataIngestionLogger | INFO | Generating embeddings for text of length 1288
+2026-06-13 12:11:16,620 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,620 | DataIngestionLogger | INFO | Generating embeddings for text of length 1590
+2026-06-13 12:11:16,635 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,635 | DataIngestionLogger | INFO | Generating embeddings for text of length 1461
+2026-06-13 12:11:16,651 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,651 | DataIngestionLogger | INFO | Generating embeddings for text of length 1662
+2026-06-13 12:11:16,669 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,669 | DataIngestionLogger | INFO | Generating embeddings for text of length 1329
+2026-06-13 12:11:16,688 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,688 | DataIngestionLogger | INFO | Generating embeddings for text of length 1813
+2026-06-13 12:11:16,705 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,705 | DataIngestionLogger | INFO | Generating embeddings for text of length 1226
+2026-06-13 12:11:16,720 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,720 | DataIngestionLogger | INFO | Generating embeddings for text of length 1839
+2026-06-13 12:11:16,737 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,737 | DataIngestionLogger | INFO | Generating embeddings for text of length 1478
+2026-06-13 12:11:16,752 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,752 | DataIngestionLogger | INFO | Generating embeddings for text of length 1901
+2026-06-13 12:11:16,767 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,767 | DataIngestionLogger | INFO | Generating embeddings for text of length 1855
+2026-06-13 12:11:16,782 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,782 | DataIngestionLogger | INFO | Generating embeddings for text of length 1434
+2026-06-13 12:11:16,797 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,797 | DataIngestionLogger | INFO | Generating embeddings for text of length 1649
+2026-06-13 12:11:16,812 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,812 | DataIngestionLogger | INFO | Generating embeddings for text of length 1647
+2026-06-13 12:11:16,828 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,828 | DataIngestionLogger | INFO | Generating embeddings for text of length 1343
+2026-06-13 12:11:16,843 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,843 | DataIngestionLogger | INFO | Generating embeddings for text of length 1688
+2026-06-13 12:11:16,858 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,858 | DataIngestionLogger | INFO | Generating embeddings for text of length 1467
+2026-06-13 12:11:16,872 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,872 | DataIngestionLogger | INFO | Generating embeddings for text of length 2336
+2026-06-13 12:11:16,888 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,888 | DataIngestionLogger | INFO | Generating embeddings for text of length 1784
+2026-06-13 12:11:16,902 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,902 | DataIngestionLogger | INFO | Generating embeddings for text of length 1534
+2026-06-13 12:11:16,916 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,916 | DataIngestionLogger | INFO | Generating embeddings for text of length 1531
+2026-06-13 12:11:16,930 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,930 | DataIngestionLogger | INFO | Generating embeddings for text of length 1714
+2026-06-13 12:11:16,944 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,944 | DataIngestionLogger | INFO | Generating embeddings for text of length 1545
+2026-06-13 12:11:16,958 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,958 | DataIngestionLogger | INFO | Generating embeddings for text of length 1556
+2026-06-13 12:11:16,972 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,972 | DataIngestionLogger | INFO | Generating embeddings for text of length 1348
+2026-06-13 12:11:16,985 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,985 | DataIngestionLogger | INFO | Generating embeddings for text of length 1970
+2026-06-13 12:11:16,999 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:16,999 | DataIngestionLogger | INFO | Generating embeddings for text of length 1560
+2026-06-13 12:11:17,014 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,014 | DataIngestionLogger | INFO | Generating embeddings for text of length 1497
+2026-06-13 12:11:17,028 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,028 | DataIngestionLogger | INFO | Generating embeddings for text of length 1437
+2026-06-13 12:11:17,043 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,043 | DataIngestionLogger | INFO | Generating embeddings for text of length 1450
+2026-06-13 12:11:17,059 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,059 | DataIngestionLogger | INFO | Generating embeddings for text of length 1277
+2026-06-13 12:11:17,073 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,073 | DataIngestionLogger | INFO | Generating embeddings for text of length 1464
+2026-06-13 12:11:17,087 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,087 | DataIngestionLogger | INFO | Generating embeddings for text of length 1331
+2026-06-13 12:11:17,099 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,100 | DataIngestionLogger | INFO | Generating embeddings for text of length 1941
+2026-06-13 12:11:17,113 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,113 | DataIngestionLogger | INFO | Generating embeddings for text of length 1658
+2026-06-13 12:11:17,125 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,125 | DataIngestionLogger | INFO | Generating embeddings for text of length 1733
+2026-06-13 12:11:17,138 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,138 | DataIngestionLogger | INFO | Generating embeddings for text of length 1621
+2026-06-13 12:11:17,150 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,150 | DataIngestionLogger | INFO | Generating embeddings for text of length 1473
+2026-06-13 12:11:17,161 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,161 | DataIngestionLogger | INFO | Generating embeddings for text of length 1664
+2026-06-13 12:11:17,174 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,174 | DataIngestionLogger | INFO | Generating embeddings for text of length 1830
+2026-06-13 12:11:17,187 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,187 | DataIngestionLogger | INFO | Generating embeddings for text of length 1736
+2026-06-13 12:11:17,199 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,199 | DataIngestionLogger | INFO | Generating embeddings for text of length 1802
+2026-06-13 12:11:17,212 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,212 | DataIngestionLogger | INFO | Generating embeddings for text of length 1258
+2026-06-13 12:11:17,225 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,225 | DataIngestionLogger | INFO | Generating embeddings for text of length 1672
+2026-06-13 12:11:17,238 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,238 | DataIngestionLogger | INFO | Generating embeddings for text of length 1760
+2026-06-13 12:11:17,251 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,251 | DataIngestionLogger | INFO | Generating embeddings for text of length 1875
+2026-06-13 12:11:17,264 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,264 | DataIngestionLogger | INFO | Generating embeddings for text of length 1749
+2026-06-13 12:11:17,278 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,278 | DataIngestionLogger | INFO | Generating embeddings for text of length 2214
+2026-06-13 12:11:17,291 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,291 | DataIngestionLogger | INFO | Generating embeddings for text of length 1485
+2026-06-13 12:11:17,304 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,304 | DataIngestionLogger | INFO | Generating embeddings for text of length 1619
+2026-06-13 12:11:17,317 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,317 | DataIngestionLogger | INFO | Generating embeddings for text of length 1415
+2026-06-13 12:11:17,330 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,330 | DataIngestionLogger | INFO | Generating embeddings for text of length 1358
+2026-06-13 12:11:17,343 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,343 | DataIngestionLogger | INFO | Generating embeddings for text of length 1534
+2026-06-13 12:11:17,357 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,357 | DataIngestionLogger | INFO | Generating embeddings for text of length 1183
+2026-06-13 12:11:17,370 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,370 | DataIngestionLogger | INFO | Generating embeddings for text of length 2115
+2026-06-13 12:11:17,383 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,383 | DataIngestionLogger | INFO | Generating embeddings for text of length 1587
+2026-06-13 12:11:17,396 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,396 | DataIngestionLogger | INFO | Generating embeddings for text of length 1458
+2026-06-13 12:11:17,409 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,409 | DataIngestionLogger | INFO | Generating embeddings for text of length 1828
+2026-06-13 12:11:17,422 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,423 | DataIngestionLogger | INFO | Generating embeddings for text of length 1610
+2026-06-13 12:11:17,435 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,435 | DataIngestionLogger | INFO | Generating embeddings for text of length 2161
+2026-06-13 12:11:17,448 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,448 | DataIngestionLogger | INFO | Generating embeddings for text of length 1457
+2026-06-13 12:11:17,460 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,460 | DataIngestionLogger | INFO | Generating embeddings for text of length 1298
+2026-06-13 12:11:17,472 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,472 | DataIngestionLogger | INFO | Generating embeddings for text of length 1948
+2026-06-13 12:11:17,485 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,485 | DataIngestionLogger | INFO | Generating embeddings for text of length 1631
+2026-06-13 12:11:17,498 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,498 | DataIngestionLogger | INFO | Generating embeddings for text of length 1942
+2026-06-13 12:11:17,511 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,511 | DataIngestionLogger | INFO | Generating embeddings for text of length 1967
+2026-06-13 12:11:17,525 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,525 | DataIngestionLogger | INFO | Generating embeddings for text of length 1572
+2026-06-13 12:11:17,538 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,538 | DataIngestionLogger | INFO | Generating embeddings for text of length 1670
+2026-06-13 12:11:17,551 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,551 | DataIngestionLogger | INFO | Generating embeddings for text of length 1608
+2026-06-13 12:11:17,564 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,564 | DataIngestionLogger | INFO | Generating embeddings for text of length 1722
+2026-06-13 12:11:17,577 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,577 | DataIngestionLogger | INFO | Generating embeddings for text of length 1612
+2026-06-13 12:11:17,591 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,591 | DataIngestionLogger | INFO | Generating embeddings for text of length 1587
+2026-06-13 12:11:17,604 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,604 | DataIngestionLogger | INFO | Generating embeddings for text of length 1758
+2026-06-13 12:11:17,618 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,618 | DataIngestionLogger | INFO | Generating embeddings for text of length 1809
+2026-06-13 12:11:17,631 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,631 | DataIngestionLogger | INFO | Generating embeddings for text of length 1999
+2026-06-13 12:11:17,645 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,645 | DataIngestionLogger | INFO | Generating embeddings for text of length 1986
+2026-06-13 12:11:17,659 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,659 | DataIngestionLogger | INFO | Generating embeddings for text of length 2013
+2026-06-13 12:11:17,673 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,673 | DataIngestionLogger | INFO | Generating embeddings for text of length 1822
+2026-06-13 12:11:17,688 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,688 | DataIngestionLogger | INFO | Generating embeddings for text of length 1935
+2026-06-13 12:11:17,702 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,702 | DataIngestionLogger | INFO | Generating embeddings for text of length 1397
+2026-06-13 12:11:17,715 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,715 | DataIngestionLogger | INFO | Generating embeddings for text of length 1790
+2026-06-13 12:11:17,730 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,730 | DataIngestionLogger | INFO | Generating embeddings for text of length 1589
+2026-06-13 12:11:17,745 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,745 | DataIngestionLogger | INFO | Generating embeddings for text of length 1630
+2026-06-13 12:11:17,759 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,759 | DataIngestionLogger | INFO | Generating embeddings for text of length 1620
+2026-06-13 12:11:17,774 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,774 | DataIngestionLogger | INFO | Generating embeddings for text of length 1647
+2026-06-13 12:11:17,789 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,789 | DataIngestionLogger | INFO | Generating embeddings for text of length 1492
+2026-06-13 12:11:17,805 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,805 | DataIngestionLogger | INFO | Generating embeddings for text of length 1985
+2026-06-13 12:11:17,822 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,822 | DataIngestionLogger | INFO | Generating embeddings for text of length 1730
+2026-06-13 12:11:17,837 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,837 | DataIngestionLogger | INFO | Generating embeddings for text of length 1615
+2026-06-13 12:11:17,852 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,852 | DataIngestionLogger | INFO | Generating embeddings for text of length 1277
+2026-06-13 12:11:17,867 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,867 | DataIngestionLogger | INFO | Generating embeddings for text of length 1419
+2026-06-13 12:11:17,882 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,882 | DataIngestionLogger | INFO | Generating embeddings for text of length 2162
+2026-06-13 12:11:17,898 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,898 | DataIngestionLogger | INFO | Generating embeddings for text of length 1819
+2026-06-13 12:11:17,914 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,914 | DataIngestionLogger | INFO | Generating embeddings for text of length 1655
+2026-06-13 12:11:17,930 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,931 | DataIngestionLogger | INFO | Generating embeddings for text of length 1601
+2026-06-13 12:11:17,947 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,947 | DataIngestionLogger | INFO | Generating embeddings for text of length 1671
+2026-06-13 12:11:17,964 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,964 | DataIngestionLogger | INFO | Generating embeddings for text of length 1692
+2026-06-13 12:11:17,981 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,981 | DataIngestionLogger | INFO | Generating embeddings for text of length 1680
+2026-06-13 12:11:17,999 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:17,999 | DataIngestionLogger | INFO | Generating embeddings for text of length 1688
+2026-06-13 12:11:18,017 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,017 | DataIngestionLogger | INFO | Generating embeddings for text of length 1548
+2026-06-13 12:11:18,034 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,034 | DataIngestionLogger | INFO | Generating embeddings for text of length 1424
+2026-06-13 12:11:18,051 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,051 | DataIngestionLogger | INFO | Generating embeddings for text of length 1615
+2026-06-13 12:11:18,067 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,067 | DataIngestionLogger | INFO | Generating embeddings for text of length 1673
+2026-06-13 12:11:18,084 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,085 | DataIngestionLogger | INFO | Generating embeddings for text of length 1439
+2026-06-13 12:11:18,101 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,101 | DataIngestionLogger | INFO | Generating embeddings for text of length 2131
+2026-06-13 12:11:18,118 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,119 | DataIngestionLogger | INFO | Generating embeddings for text of length 2172
+2026-06-13 12:11:18,136 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,136 | DataIngestionLogger | INFO | Generating embeddings for text of length 1756
+2026-06-13 12:11:18,152 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,153 | DataIngestionLogger | INFO | Generating embeddings for text of length 1486
+2026-06-13 12:11:18,170 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,170 | DataIngestionLogger | INFO | Generating embeddings for text of length 1734
+2026-06-13 12:11:18,187 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,187 | DataIngestionLogger | INFO | Generating embeddings for text of length 1456
+2026-06-13 12:11:18,204 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,204 | DataIngestionLogger | INFO | Generating embeddings for text of length 1468
+2026-06-13 12:11:18,221 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,222 | DataIngestionLogger | INFO | Generating embeddings for text of length 1305
+2026-06-13 12:11:18,238 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,239 | DataIngestionLogger | INFO | Generating embeddings for text of length 1741
+2026-06-13 12:11:18,256 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,256 | DataIngestionLogger | INFO | Generating embeddings for text of length 1957
+2026-06-13 12:11:18,274 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,274 | DataIngestionLogger | INFO | Generating embeddings for text of length 1676
+2026-06-13 12:11:18,291 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,291 | DataIngestionLogger | INFO | Generating embeddings for text of length 1801
+2026-06-13 12:11:18,308 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,308 | DataIngestionLogger | INFO | Generating embeddings for text of length 1824
+2026-06-13 12:11:18,325 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,325 | DataIngestionLogger | INFO | Generating embeddings for text of length 2026
+2026-06-13 12:11:18,341 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,341 | DataIngestionLogger | INFO | Generating embeddings for text of length 1689
+2026-06-13 12:11:18,357 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,358 | DataIngestionLogger | INFO | Generating embeddings for text of length 1870
+2026-06-13 12:11:18,373 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,373 | DataIngestionLogger | INFO | Generating embeddings for text of length 1788
+2026-06-13 12:11:18,389 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,389 | DataIngestionLogger | INFO | Generating embeddings for text of length 1563
+2026-06-13 12:11:18,405 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,405 | DataIngestionLogger | INFO | Generating embeddings for text of length 1710
+2026-06-13 12:11:18,421 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,421 | DataIngestionLogger | INFO | Generating embeddings for text of length 1911
+2026-06-13 12:11:18,437 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,437 | DataIngestionLogger | INFO | Generating embeddings for text of length 1077
+2026-06-13 12:11:18,452 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,452 | DataIngestionLogger | INFO | Generating embeddings for text of length 1301
+2026-06-13 12:11:18,467 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,467 | DataIngestionLogger | INFO | Generating embeddings for text of length 1892
+2026-06-13 12:11:18,483 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,483 | DataIngestionLogger | INFO | Generating embeddings for text of length 1966
+2026-06-13 12:11:18,500 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,500 | DataIngestionLogger | INFO | Generating embeddings for text of length 1903
+2026-06-13 12:11:18,516 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,516 | DataIngestionLogger | INFO | Generating embeddings for text of length 1575
+2026-06-13 12:11:18,532 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,532 | DataIngestionLogger | INFO | Generating embeddings for text of length 1569
+2026-06-13 12:11:18,548 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,548 | DataIngestionLogger | INFO | Generating embeddings for text of length 1529
+2026-06-13 12:11:18,564 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,564 | DataIngestionLogger | INFO | Generating embeddings for text of length 1661
+2026-06-13 12:11:18,580 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,580 | DataIngestionLogger | INFO | Generating embeddings for text of length 1638
+2026-06-13 12:11:18,596 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,597 | DataIngestionLogger | INFO | Generating embeddings for text of length 1969
+2026-06-13 12:11:18,613 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,613 | DataIngestionLogger | INFO | Generating embeddings for text of length 1282
+2026-06-13 12:11:18,629 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,629 | DataIngestionLogger | INFO | Generating embeddings for text of length 1523
+2026-06-13 12:11:18,645 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,645 | DataIngestionLogger | INFO | Generating embeddings for text of length 1838
+2026-06-13 12:11:18,661 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,661 | DataIngestionLogger | INFO | Generating embeddings for text of length 1254
+2026-06-13 12:11:18,677 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,677 | DataIngestionLogger | INFO | Generating embeddings for text of length 1664
+2026-06-13 12:11:18,693 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,693 | DataIngestionLogger | INFO | Generating embeddings for text of length 1678
+2026-06-13 12:11:18,708 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,708 | DataIngestionLogger | INFO | Generating embeddings for text of length 1250
+2026-06-13 12:11:18,723 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,724 | DataIngestionLogger | INFO | Generating embeddings for text of length 1381
+2026-06-13 12:11:18,739 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,739 | DataIngestionLogger | INFO | Generating embeddings for text of length 1565
+2026-06-13 12:11:18,756 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,756 | DataIngestionLogger | INFO | Generating embeddings for text of length 1623
+2026-06-13 12:11:18,772 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,772 | DataIngestionLogger | INFO | Generating embeddings for text of length 1616
+2026-06-13 12:11:18,788 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,788 | DataIngestionLogger | INFO | Generating embeddings for text of length 1495
+2026-06-13 12:11:18,804 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,804 | DataIngestionLogger | INFO | Generating embeddings for text of length 1519
+2026-06-13 12:11:18,819 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,820 | DataIngestionLogger | INFO | Generating embeddings for text of length 1310
+2026-06-13 12:11:18,835 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,835 | DataIngestionLogger | INFO | Generating embeddings for text of length 1695
+2026-06-13 12:11:18,850 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,850 | DataIngestionLogger | INFO | Generating embeddings for text of length 1653
+2026-06-13 12:11:18,866 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,866 | DataIngestionLogger | INFO | Generating embeddings for text of length 1762
+2026-06-13 12:11:18,882 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,882 | DataIngestionLogger | INFO | Generating embeddings for text of length 1730
+2026-06-13 12:11:18,898 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,898 | DataIngestionLogger | INFO | Generating embeddings for text of length 1710
+2026-06-13 12:11:18,915 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,916 | DataIngestionLogger | INFO | Generating embeddings for text of length 2377
+2026-06-13 12:11:18,932 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,932 | DataIngestionLogger | INFO | Generating embeddings for text of length 1987
+2026-06-13 12:11:18,948 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,948 | DataIngestionLogger | INFO | Generating embeddings for text of length 1675
+2026-06-13 12:11:18,962 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,962 | DataIngestionLogger | INFO | Generating embeddings for text of length 1714
+2026-06-13 12:11:18,977 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,977 | DataIngestionLogger | INFO | Generating embeddings for text of length 1932
+2026-06-13 12:11:18,991 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:18,991 | DataIngestionLogger | INFO | Generating embeddings for text of length 1589
+2026-06-13 12:11:19,006 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,006 | DataIngestionLogger | INFO | Generating embeddings for text of length 1405
+2026-06-13 12:11:19,020 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,021 | DataIngestionLogger | INFO | Generating embeddings for text of length 1904
+2026-06-13 12:11:19,035 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,035 | DataIngestionLogger | INFO | Generating embeddings for text of length 1682
+2026-06-13 12:11:19,050 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,051 | DataIngestionLogger | INFO | Generating embeddings for text of length 1536
+2026-06-13 12:11:19,066 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,066 | DataIngestionLogger | INFO | Generating embeddings for text of length 1915
+2026-06-13 12:11:19,082 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,082 | DataIngestionLogger | INFO | Generating embeddings for text of length 1595
+2026-06-13 12:11:19,098 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,098 | DataIngestionLogger | INFO | Generating embeddings for text of length 1712
+2026-06-13 12:11:19,115 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,115 | DataIngestionLogger | INFO | Generating embeddings for text of length 1805
+2026-06-13 12:11:19,132 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,133 | DataIngestionLogger | INFO | Generating embeddings for text of length 1796
+2026-06-13 12:11:19,150 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,150 | DataIngestionLogger | INFO | Generating embeddings for text of length 1809
+2026-06-13 12:11:19,167 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,167 | DataIngestionLogger | INFO | Generating embeddings for text of length 1654
+2026-06-13 12:11:19,183 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,183 | DataIngestionLogger | INFO | Generating embeddings for text of length 1234
+2026-06-13 12:11:19,199 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,200 | DataIngestionLogger | INFO | Generating embeddings for text of length 1494
+2026-06-13 12:11:19,216 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,216 | DataIngestionLogger | INFO | Generating embeddings for text of length 1494
+2026-06-13 12:11:19,233 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,233 | DataIngestionLogger | INFO | Generating embeddings for text of length 1603
+2026-06-13 12:11:19,250 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,250 | DataIngestionLogger | INFO | Generating embeddings for text of length 1526
+2026-06-13 12:11:19,267 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,267 | DataIngestionLogger | INFO | Generating embeddings for text of length 1537
+2026-06-13 12:11:19,284 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,284 | DataIngestionLogger | INFO | Generating embeddings for text of length 1444
+2026-06-13 12:11:19,300 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,300 | DataIngestionLogger | INFO | Generating embeddings for text of length 1301
+2026-06-13 12:11:19,317 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,317 | DataIngestionLogger | INFO | Generating embeddings for text of length 1358
+2026-06-13 12:11:19,333 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,333 | DataIngestionLogger | INFO | Generating embeddings for text of length 1529
+2026-06-13 12:11:19,350 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,350 | DataIngestionLogger | INFO | Generating embeddings for text of length 1618
+2026-06-13 12:11:19,367 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,367 | DataIngestionLogger | INFO | Generating embeddings for text of length 1698
+2026-06-13 12:11:19,383 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,383 | DataIngestionLogger | INFO | Generating embeddings for text of length 1804
+2026-06-13 12:11:19,400 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,400 | DataIngestionLogger | INFO | Generating embeddings for text of length 1671
+2026-06-13 12:11:19,417 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,417 | DataIngestionLogger | INFO | Generating embeddings for text of length 1401
+2026-06-13 12:11:19,433 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,434 | DataIngestionLogger | INFO | Generating embeddings for text of length 1713
+2026-06-13 12:11:19,450 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,450 | DataIngestionLogger | INFO | Generating embeddings for text of length 1563
+2026-06-13 12:11:19,467 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,467 | DataIngestionLogger | INFO | Generating embeddings for text of length 1606
+2026-06-13 12:11:19,484 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,484 | DataIngestionLogger | INFO | Generating embeddings for text of length 1715
+2026-06-13 12:11:19,501 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,501 | DataIngestionLogger | INFO | Generating embeddings for text of length 1483
+2026-06-13 12:11:19,518 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,518 | DataIngestionLogger | INFO | Generating embeddings for text of length 1579
+2026-06-13 12:11:19,535 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,535 | DataIngestionLogger | INFO | Generating embeddings for text of length 1357
+2026-06-13 12:11:19,552 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,552 | DataIngestionLogger | INFO | Generating embeddings for text of length 1471
+2026-06-13 12:11:19,569 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,569 | DataIngestionLogger | INFO | Generating embeddings for text of length 1122
+2026-06-13 12:11:19,585 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,585 | DataIngestionLogger | INFO | Generating embeddings for text of length 1693
+2026-06-13 12:11:19,600 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,600 | DataIngestionLogger | INFO | Generating embeddings for text of length 1825
+2026-06-13 12:11:19,616 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,616 | DataIngestionLogger | INFO | Generating embeddings for text of length 1738
+2026-06-13 12:11:19,632 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,632 | DataIngestionLogger | INFO | Generating embeddings for text of length 2177
+2026-06-13 12:11:19,649 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,649 | DataIngestionLogger | INFO | Generating embeddings for text of length 2048
+2026-06-13 12:11:19,667 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,667 | DataIngestionLogger | INFO | Generating embeddings for text of length 2042
+2026-06-13 12:11:19,684 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,684 | DataIngestionLogger | INFO | Generating embeddings for text of length 1824
+2026-06-13 12:11:19,701 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,701 | DataIngestionLogger | INFO | Generating embeddings for text of length 1736
+2026-06-13 12:11:19,718 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,718 | DataIngestionLogger | INFO | Generating embeddings for text of length 1616
+2026-06-13 12:11:19,735 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,735 | DataIngestionLogger | INFO | Generating embeddings for text of length 1671
+2026-06-13 12:11:19,752 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,752 | DataIngestionLogger | INFO | Generating embeddings for text of length 1494
+2026-06-13 12:11:19,769 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,769 | DataIngestionLogger | INFO | Generating embeddings for text of length 1466
+2026-06-13 12:11:19,785 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,785 | DataIngestionLogger | INFO | Generating embeddings for text of length 1648
+2026-06-13 12:11:19,801 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,801 | DataIngestionLogger | INFO | Generating embeddings for text of length 1733
+2026-06-13 12:11:19,818 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,818 | DataIngestionLogger | INFO | Generating embeddings for text of length 1884
+2026-06-13 12:11:19,835 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,835 | DataIngestionLogger | INFO | Generating embeddings for text of length 1600
+2026-06-13 12:11:19,852 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,852 | DataIngestionLogger | INFO | Generating embeddings for text of length 1872
+2026-06-13 12:11:19,868 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,868 | DataIngestionLogger | INFO | Generating embeddings for text of length 1935
+2026-06-13 12:11:19,883 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,883 | DataIngestionLogger | INFO | Generating embeddings for text of length 1882
+2026-06-13 12:11:19,899 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,899 | DataIngestionLogger | INFO | Generating embeddings for text of length 1613
+2026-06-13 12:11:19,915 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,915 | DataIngestionLogger | INFO | Generating embeddings for text of length 1426
+2026-06-13 12:11:19,930 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,930 | DataIngestionLogger | INFO | Generating embeddings for text of length 1519
+2026-06-13 12:11:19,946 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,946 | DataIngestionLogger | INFO | Generating embeddings for text of length 1582
+2026-06-13 12:11:19,961 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,961 | DataIngestionLogger | INFO | Generating embeddings for text of length 1568
+2026-06-13 12:11:19,976 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,977 | DataIngestionLogger | INFO | Generating embeddings for text of length 1687
+2026-06-13 12:11:19,992 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:19,992 | DataIngestionLogger | INFO | Generating embeddings for text of length 1467
+2026-06-13 12:11:20,007 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,007 | DataIngestionLogger | INFO | Generating embeddings for text of length 1638
+2026-06-13 12:11:20,023 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,023 | DataIngestionLogger | INFO | Generating embeddings for text of length 1819
+2026-06-13 12:11:20,039 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,039 | DataIngestionLogger | INFO | Generating embeddings for text of length 1658
+2026-06-13 12:11:20,054 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,055 | DataIngestionLogger | INFO | Generating embeddings for text of length 1462
+2026-06-13 12:11:20,071 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,071 | DataIngestionLogger | INFO | Generating embeddings for text of length 1908
+2026-06-13 12:11:20,086 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,086 | DataIngestionLogger | INFO | Generating embeddings for text of length 1500
+2026-06-13 12:11:20,102 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,102 | DataIngestionLogger | INFO | Generating embeddings for text of length 1785
+2026-06-13 12:11:20,118 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,118 | DataIngestionLogger | INFO | Generating embeddings for text of length 1594
+2026-06-13 12:11:20,134 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,134 | DataIngestionLogger | INFO | Generating embeddings for text of length 1605
+2026-06-13 12:11:20,150 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,150 | DataIngestionLogger | INFO | Generating embeddings for text of length 1404
+2026-06-13 12:11:20,166 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,166 | DataIngestionLogger | INFO | Generating embeddings for text of length 1696
+2026-06-13 12:11:20,183 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,183 | DataIngestionLogger | INFO | Generating embeddings for text of length 1634
+2026-06-13 12:11:20,200 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,200 | DataIngestionLogger | INFO | Generating embeddings for text of length 1391
+2026-06-13 12:11:20,217 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,217 | DataIngestionLogger | INFO | Generating embeddings for text of length 1473
+2026-06-13 12:11:20,234 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,234 | DataIngestionLogger | INFO | Generating embeddings for text of length 1659
+2026-06-13 12:11:20,250 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,251 | DataIngestionLogger | INFO | Generating embeddings for text of length 1679
+2026-06-13 12:11:20,267 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,267 | DataIngestionLogger | INFO | Generating embeddings for text of length 1284
+2026-06-13 12:11:20,284 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,284 | DataIngestionLogger | INFO | Generating embeddings for text of length 1593
+2026-06-13 12:11:20,300 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,300 | DataIngestionLogger | INFO | Generating embeddings for text of length 1512
+2026-06-13 12:11:20,318 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,318 | DataIngestionLogger | INFO | Generating embeddings for text of length 1504
+2026-06-13 12:11:20,334 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,334 | DataIngestionLogger | INFO | Generating embeddings for text of length 1507
+2026-06-13 12:11:20,350 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,350 | DataIngestionLogger | INFO | Generating embeddings for text of length 1539
+2026-06-13 12:11:20,367 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,367 | DataIngestionLogger | INFO | Generating embeddings for text of length 1355
+2026-06-13 12:11:20,384 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,384 | DataIngestionLogger | INFO | Generating embeddings for text of length 1800
+2026-06-13 12:11:20,401 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,401 | DataIngestionLogger | INFO | Generating embeddings for text of length 1207
+2026-06-13 12:11:20,417 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,417 | DataIngestionLogger | INFO | Generating embeddings for text of length 1773
+2026-06-13 12:11:20,434 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,434 | DataIngestionLogger | INFO | Generating embeddings for text of length 1306
+2026-06-13 12:11:20,450 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,450 | DataIngestionLogger | INFO | Generating embeddings for text of length 1754
+2026-06-13 12:11:20,467 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,467 | DataIngestionLogger | INFO | Generating embeddings for text of length 1738
+2026-06-13 12:11:20,484 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,484 | DataIngestionLogger | INFO | Generating embeddings for text of length 1598
+2026-06-13 12:11:20,500 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,500 | DataIngestionLogger | INFO | Generating embeddings for text of length 1617
+2026-06-13 12:11:20,517 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,517 | DataIngestionLogger | INFO | Generating embeddings for text of length 1582
+2026-06-13 12:11:20,534 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,534 | DataIngestionLogger | INFO | Generating embeddings for text of length 1326
+2026-06-13 12:11:20,550 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,551 | DataIngestionLogger | INFO | Generating embeddings for text of length 1784
+2026-06-13 12:11:20,567 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,567 | DataIngestionLogger | INFO | Generating embeddings for text of length 1683
+2026-06-13 12:11:20,584 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,584 | DataIngestionLogger | INFO | Generating embeddings for text of length 1271
+2026-06-13 12:11:20,600 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,600 | DataIngestionLogger | INFO | Generating embeddings for text of length 1747
+2026-06-13 12:11:20,617 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,617 | DataIngestionLogger | INFO | Generating embeddings for text of length 1782
+2026-06-13 12:11:20,634 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,635 | DataIngestionLogger | INFO | Generating embeddings for text of length 1411
+2026-06-13 12:11:20,651 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,651 | DataIngestionLogger | INFO | Generating embeddings for text of length 1587
+2026-06-13 12:11:20,667 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,667 | DataIngestionLogger | INFO | Generating embeddings for text of length 1553
+2026-06-13 12:11:20,684 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,684 | DataIngestionLogger | INFO | Generating embeddings for text of length 1614
+2026-06-13 12:11:20,700 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,701 | DataIngestionLogger | INFO | Generating embeddings for text of length 1569
+2026-06-13 12:11:20,717 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,717 | DataIngestionLogger | INFO | Generating embeddings for text of length 1915
+2026-06-13 12:11:20,734 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,734 | DataIngestionLogger | INFO | Generating embeddings for text of length 2275
+2026-06-13 12:11:20,751 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,751 | DataIngestionLogger | INFO | Generating embeddings for text of length 1493
+2026-06-13 12:11:20,768 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,768 | DataIngestionLogger | INFO | Generating embeddings for text of length 1829
+2026-06-13 12:11:20,784 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,784 | DataIngestionLogger | INFO | Generating embeddings for text of length 1496
+2026-06-13 12:11:20,801 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,801 | DataIngestionLogger | INFO | Generating embeddings for text of length 1757
+2026-06-13 12:11:20,817 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:11:20,817 | DataIngestionLogger | INFO | Generating embeddings for text of length 256
+2026-06-13 12:11:20,983 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:15,759 | DataIngestionLogger | INFO | Starting data ingestion pipeline.
+2026-06-13 12:17:15,759 | DataIngestionLogger | INFO | Loading PDF files from directory: data
+2026-06-13 12:17:15,759 | DataIngestionLogger | INFO | Found 2 PDF files in directory: data
+2026-06-13 12:17:15,759 | DataIngestionLogger | INFO | Loading PDF file: data/HarryPotterSorcersStone_Excerpt.pdf
+2026-06-13 12:17:15,915 | DataIngestionLogger | INFO | Loading PDF file: data/(Book 3) Harry Potter And The Prisoner Of Azkaban_001.pdf
+2026-06-13 12:17:16,411 | DataIngestionLogger | INFO | Data ingestion pipeline completed. Loaded 394 documents.
+2026-06-13 12:17:16,411 | DataIngestionLogger | INFO | Splitting 394 documents into chunks.
+2026-06-13 12:17:16,815 | DataIngestionLogger | INFO | Completed splitting documents. Total chunks created: 392
+2026-06-13 12:17:16,815 | DataIngestionLogger | INFO | Loading pre-trained model: all-MiniLM-L6-v2
+2026-06-13 12:17:22,084 | DataIngestionLogger | INFO | Successfully loaded model: all-MiniLM-L6-v2 with embedding dimension: 384
+2026-06-13 12:17:22,085 | DataIngestionLogger | INFO | Generating embeddings for text of length 37
+2026-06-13 12:17:22,162 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,163 | DataIngestionLogger | INFO | Generating embeddings for text of length 382
+2026-06-13 12:17:22,182 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,182 | DataIngestionLogger | INFO | Generating embeddings for text of length 137
+2026-06-13 12:17:22,202 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,202 | DataIngestionLogger | INFO | Generating embeddings for text of length 2001
+2026-06-13 12:17:22,227 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,227 | DataIngestionLogger | INFO | Generating embeddings for text of length 275
+2026-06-13 12:17:22,253 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,253 | DataIngestionLogger | INFO | Generating embeddings for text of length 303
+2026-06-13 12:17:22,258 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,258 | DataIngestionLogger | INFO | Generating embeddings for text of length 37
+2026-06-13 12:17:22,263 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,263 | DataIngestionLogger | INFO | Generating embeddings for text of length 905
+2026-06-13 12:17:22,286 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,286 | DataIngestionLogger | INFO | Generating embeddings for text of length 1698
+2026-06-13 12:17:22,297 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,297 | DataIngestionLogger | INFO | Generating embeddings for text of length 1804
+2026-06-13 12:17:22,308 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,308 | DataIngestionLogger | INFO | Generating embeddings for text of length 1672
+2026-06-13 12:17:22,320 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,320 | DataIngestionLogger | INFO | Generating embeddings for text of length 1672
+2026-06-13 12:17:22,331 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,331 | DataIngestionLogger | INFO | Generating embeddings for text of length 1749
+2026-06-13 12:17:22,342 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,342 | DataIngestionLogger | INFO | Generating embeddings for text of length 1516
+2026-06-13 12:17:22,354 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,354 | DataIngestionLogger | INFO | Generating embeddings for text of length 1787
+2026-06-13 12:17:22,366 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,366 | DataIngestionLogger | INFO | Generating embeddings for text of length 1782
+2026-06-13 12:17:22,378 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,378 | DataIngestionLogger | INFO | Generating embeddings for text of length 1598
+2026-06-13 12:17:22,389 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,389 | DataIngestionLogger | INFO | Generating embeddings for text of length 1682
+2026-06-13 12:17:22,401 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,401 | DataIngestionLogger | INFO | Generating embeddings for text of length 1639
+2026-06-13 12:17:22,412 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,412 | DataIngestionLogger | INFO | Generating embeddings for text of length 1728
+2026-06-13 12:17:22,423 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,424 | DataIngestionLogger | INFO | Generating embeddings for text of length 1559
+2026-06-13 12:17:22,435 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,435 | DataIngestionLogger | INFO | Generating embeddings for text of length 1540
+2026-06-13 12:17:22,446 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,447 | DataIngestionLogger | INFO | Generating embeddings for text of length 1585
+2026-06-13 12:17:22,458 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,458 | DataIngestionLogger | INFO | Generating embeddings for text of length 800
+2026-06-13 12:17:22,480 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,480 | DataIngestionLogger | INFO | Generating embeddings for text of length 2037
+2026-06-13 12:17:22,492 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,493 | DataIngestionLogger | INFO | Generating embeddings for text of length 2249
+2026-06-13 12:17:22,505 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,505 | DataIngestionLogger | INFO | Generating embeddings for text of length 1421
+2026-06-13 12:17:22,516 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,516 | DataIngestionLogger | INFO | Generating embeddings for text of length 2153
+2026-06-13 12:17:22,528 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,528 | DataIngestionLogger | INFO | Generating embeddings for text of length 2073
+2026-06-13 12:17:22,540 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,540 | DataIngestionLogger | INFO | Generating embeddings for text of length 1917
+2026-06-13 12:17:22,552 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,552 | DataIngestionLogger | INFO | Generating embeddings for text of length 1634
+2026-06-13 12:17:22,563 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,563 | DataIngestionLogger | INFO | Generating embeddings for text of length 1451
+2026-06-13 12:17:22,576 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,576 | DataIngestionLogger | INFO | Generating embeddings for text of length 1881
+2026-06-13 12:17:22,588 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,588 | DataIngestionLogger | INFO | Generating embeddings for text of length 1873
+2026-06-13 12:17:22,600 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,600 | DataIngestionLogger | INFO | Generating embeddings for text of length 1335
+2026-06-13 12:17:22,612 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,612 | DataIngestionLogger | INFO | Generating embeddings for text of length 1849
+2026-06-13 12:17:22,625 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,625 | DataIngestionLogger | INFO | Generating embeddings for text of length 1699
+2026-06-13 12:17:22,637 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,637 | DataIngestionLogger | INFO | Generating embeddings for text of length 1858
+2026-06-13 12:17:22,649 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,649 | DataIngestionLogger | INFO | Generating embeddings for text of length 1463
+2026-06-13 12:17:22,661 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,661 | DataIngestionLogger | INFO | Generating embeddings for text of length 1581
+2026-06-13 12:17:22,673 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,673 | DataIngestionLogger | INFO | Generating embeddings for text of length 1770
+2026-06-13 12:17:22,686 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,686 | DataIngestionLogger | INFO | Generating embeddings for text of length 1934
+2026-06-13 12:17:22,699 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,699 | DataIngestionLogger | INFO | Generating embeddings for text of length 1469
+2026-06-13 12:17:22,712 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,712 | DataIngestionLogger | INFO | Generating embeddings for text of length 1796
+2026-06-13 12:17:22,725 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,725 | DataIngestionLogger | INFO | Generating embeddings for text of length 1916
+2026-06-13 12:17:22,739 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,739 | DataIngestionLogger | INFO | Generating embeddings for text of length 1617
+2026-06-13 12:17:22,753 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,753 | DataIngestionLogger | INFO | Generating embeddings for text of length 1692
+2026-06-13 12:17:22,767 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,767 | DataIngestionLogger | INFO | Generating embeddings for text of length 1934
+2026-06-13 12:17:22,780 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,780 | DataIngestionLogger | INFO | Generating embeddings for text of length 1717
+2026-06-13 12:17:22,795 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,795 | DataIngestionLogger | INFO | Generating embeddings for text of length 2090
+2026-06-13 12:17:22,809 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,809 | DataIngestionLogger | INFO | Generating embeddings for text of length 1678
+2026-06-13 12:17:22,822 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,823 | DataIngestionLogger | INFO | Generating embeddings for text of length 1747
+2026-06-13 12:17:22,837 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,837 | DataIngestionLogger | INFO | Generating embeddings for text of length 1716
+2026-06-13 12:17:22,851 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,851 | DataIngestionLogger | INFO | Generating embeddings for text of length 1492
+2026-06-13 12:17:22,865 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,865 | DataIngestionLogger | INFO | Generating embeddings for text of length 1572
+2026-06-13 12:17:22,880 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,880 | DataIngestionLogger | INFO | Generating embeddings for text of length 1546
+2026-06-13 12:17:22,895 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,895 | DataIngestionLogger | INFO | Generating embeddings for text of length 1847
+2026-06-13 12:17:22,911 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,911 | DataIngestionLogger | INFO | Generating embeddings for text of length 1387
+2026-06-13 12:17:22,927 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,928 | DataIngestionLogger | INFO | Generating embeddings for text of length 1459
+2026-06-13 12:17:22,945 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,945 | DataIngestionLogger | INFO | Generating embeddings for text of length 1847
+2026-06-13 12:17:22,960 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,960 | DataIngestionLogger | INFO | Generating embeddings for text of length 1569
+2026-06-13 12:17:22,976 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,976 | DataIngestionLogger | INFO | Generating embeddings for text of length 1506
+2026-06-13 12:17:22,991 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:22,991 | DataIngestionLogger | INFO | Generating embeddings for text of length 1206
+2026-06-13 12:17:23,007 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,007 | DataIngestionLogger | INFO | Generating embeddings for text of length 1758
+2026-06-13 12:17:23,022 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,022 | DataIngestionLogger | INFO | Generating embeddings for text of length 2213
+2026-06-13 12:17:23,039 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,039 | DataIngestionLogger | INFO | Generating embeddings for text of length 1683
+2026-06-13 12:17:23,056 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,056 | DataIngestionLogger | INFO | Generating embeddings for text of length 1729
+2026-06-13 12:17:23,072 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,072 | DataIngestionLogger | INFO | Generating embeddings for text of length 1795
+2026-06-13 12:17:23,088 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,088 | DataIngestionLogger | INFO | Generating embeddings for text of length 1804
+2026-06-13 12:17:23,104 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,104 | DataIngestionLogger | INFO | Generating embeddings for text of length 1683
+2026-06-13 12:17:23,121 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,121 | DataIngestionLogger | INFO | Generating embeddings for text of length 1570
+2026-06-13 12:17:23,137 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,137 | DataIngestionLogger | INFO | Generating embeddings for text of length 1931
+2026-06-13 12:17:23,153 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,153 | DataIngestionLogger | INFO | Generating embeddings for text of length 1402
+2026-06-13 12:17:23,168 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,169 | DataIngestionLogger | INFO | Generating embeddings for text of length 1534
+2026-06-13 12:17:23,183 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,183 | DataIngestionLogger | INFO | Generating embeddings for text of length 1571
+2026-06-13 12:17:23,198 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,198 | DataIngestionLogger | INFO | Generating embeddings for text of length 1343
+2026-06-13 12:17:23,213 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,213 | DataIngestionLogger | INFO | Generating embeddings for text of length 1324
+2026-06-13 12:17:23,229 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,229 | DataIngestionLogger | INFO | Generating embeddings for text of length 1587
+2026-06-13 12:17:23,244 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,244 | DataIngestionLogger | INFO | Generating embeddings for text of length 1822
+2026-06-13 12:17:23,261 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,261 | DataIngestionLogger | INFO | Generating embeddings for text of length 1695
+2026-06-13 12:17:23,277 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,277 | DataIngestionLogger | INFO | Generating embeddings for text of length 1757
+2026-06-13 12:17:23,293 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,294 | DataIngestionLogger | INFO | Generating embeddings for text of length 1757
+2026-06-13 12:17:23,310 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,310 | DataIngestionLogger | INFO | Generating embeddings for text of length 1850
+2026-06-13 12:17:23,326 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,326 | DataIngestionLogger | INFO | Generating embeddings for text of length 1718
+2026-06-13 12:17:23,342 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,342 | DataIngestionLogger | INFO | Generating embeddings for text of length 1630
+2026-06-13 12:17:23,358 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,359 | DataIngestionLogger | INFO | Generating embeddings for text of length 1479
+2026-06-13 12:17:23,375 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,375 | DataIngestionLogger | INFO | Generating embeddings for text of length 1593
+2026-06-13 12:17:23,391 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,391 | DataIngestionLogger | INFO | Generating embeddings for text of length 1399
+2026-06-13 12:17:23,407 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,407 | DataIngestionLogger | INFO | Generating embeddings for text of length 1266
+2026-06-13 12:17:23,424 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,424 | DataIngestionLogger | INFO | Generating embeddings for text of length 982
+2026-06-13 12:17:23,440 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,440 | DataIngestionLogger | INFO | Generating embeddings for text of length 1615
+2026-06-13 12:17:23,456 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,456 | DataIngestionLogger | INFO | Generating embeddings for text of length 1401
+2026-06-13 12:17:23,472 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,472 | DataIngestionLogger | INFO | Generating embeddings for text of length 1579
+2026-06-13 12:17:23,489 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,489 | DataIngestionLogger | INFO | Generating embeddings for text of length 1831
+2026-06-13 12:17:23,505 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,505 | DataIngestionLogger | INFO | Generating embeddings for text of length 1880
+2026-06-13 12:17:23,522 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,522 | DataIngestionLogger | INFO | Generating embeddings for text of length 1733
+2026-06-13 12:17:23,538 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,538 | DataIngestionLogger | INFO | Generating embeddings for text of length 1543
+2026-06-13 12:17:23,555 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,555 | DataIngestionLogger | INFO | Generating embeddings for text of length 2037
+2026-06-13 12:17:23,572 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,572 | DataIngestionLogger | INFO | Generating embeddings for text of length 2012
+2026-06-13 12:17:23,588 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,588 | DataIngestionLogger | INFO | Generating embeddings for text of length 1906
+2026-06-13 12:17:23,605 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,605 | DataIngestionLogger | INFO | Generating embeddings for text of length 1677
+2026-06-13 12:17:23,622 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,622 | DataIngestionLogger | INFO | Generating embeddings for text of length 1501
+2026-06-13 12:17:23,638 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,638 | DataIngestionLogger | INFO | Generating embeddings for text of length 1748
+2026-06-13 12:17:23,655 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,655 | DataIngestionLogger | INFO | Generating embeddings for text of length 2045
+2026-06-13 12:17:23,672 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,672 | DataIngestionLogger | INFO | Generating embeddings for text of length 1841
+2026-06-13 12:17:23,689 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,689 | DataIngestionLogger | INFO | Generating embeddings for text of length 1792
+2026-06-13 12:17:23,705 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,705 | DataIngestionLogger | INFO | Generating embeddings for text of length 1885
+2026-06-13 12:17:23,722 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,722 | DataIngestionLogger | INFO | Generating embeddings for text of length 1459
+2026-06-13 12:17:23,738 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,738 | DataIngestionLogger | INFO | Generating embeddings for text of length 1590
+2026-06-13 12:17:23,755 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,755 | DataIngestionLogger | INFO | Generating embeddings for text of length 1863
+2026-06-13 12:17:23,772 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,772 | DataIngestionLogger | INFO | Generating embeddings for text of length 1666
+2026-06-13 12:17:23,788 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,788 | DataIngestionLogger | INFO | Generating embeddings for text of length 1541
+2026-06-13 12:17:23,805 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,805 | DataIngestionLogger | INFO | Generating embeddings for text of length 1645
+2026-06-13 12:17:23,821 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,821 | DataIngestionLogger | INFO | Generating embeddings for text of length 1577
+2026-06-13 12:17:23,838 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,838 | DataIngestionLogger | INFO | Generating embeddings for text of length 1817
+2026-06-13 12:17:23,855 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,856 | DataIngestionLogger | INFO | Generating embeddings for text of length 1479
+2026-06-13 12:17:23,872 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,872 | DataIngestionLogger | INFO | Generating embeddings for text of length 1655
+2026-06-13 12:17:23,889 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,889 | DataIngestionLogger | INFO | Generating embeddings for text of length 2035
+2026-06-13 12:17:23,906 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,906 | DataIngestionLogger | INFO | Generating embeddings for text of length 1646
+2026-06-13 12:17:23,922 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,922 | DataIngestionLogger | INFO | Generating embeddings for text of length 1531
+2026-06-13 12:17:23,938 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,938 | DataIngestionLogger | INFO | Generating embeddings for text of length 1735
+2026-06-13 12:17:23,955 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,955 | DataIngestionLogger | INFO | Generating embeddings for text of length 1288
+2026-06-13 12:17:23,970 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,970 | DataIngestionLogger | INFO | Generating embeddings for text of length 1590
+2026-06-13 12:17:23,985 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:23,985 | DataIngestionLogger | INFO | Generating embeddings for text of length 1461
+2026-06-13 12:17:23,999 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,000 | DataIngestionLogger | INFO | Generating embeddings for text of length 1662
+2026-06-13 12:17:24,014 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,014 | DataIngestionLogger | INFO | Generating embeddings for text of length 1329
+2026-06-13 12:17:24,029 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,029 | DataIngestionLogger | INFO | Generating embeddings for text of length 1813
+2026-06-13 12:17:24,044 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,044 | DataIngestionLogger | INFO | Generating embeddings for text of length 1226
+2026-06-13 12:17:24,059 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,059 | DataIngestionLogger | INFO | Generating embeddings for text of length 1839
+2026-06-13 12:17:24,074 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,074 | DataIngestionLogger | INFO | Generating embeddings for text of length 1478
+2026-06-13 12:17:24,088 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,088 | DataIngestionLogger | INFO | Generating embeddings for text of length 1901
+2026-06-13 12:17:24,104 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,104 | DataIngestionLogger | INFO | Generating embeddings for text of length 1855
+2026-06-13 12:17:24,119 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,119 | DataIngestionLogger | INFO | Generating embeddings for text of length 1434
+2026-06-13 12:17:24,134 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,134 | DataIngestionLogger | INFO | Generating embeddings for text of length 1649
+2026-06-13 12:17:24,148 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,148 | DataIngestionLogger | INFO | Generating embeddings for text of length 1647
+2026-06-13 12:17:24,163 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,163 | DataIngestionLogger | INFO | Generating embeddings for text of length 1343
+2026-06-13 12:17:24,179 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,179 | DataIngestionLogger | INFO | Generating embeddings for text of length 1688
+2026-06-13 12:17:24,196 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,196 | DataIngestionLogger | INFO | Generating embeddings for text of length 1467
+2026-06-13 12:17:24,213 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,213 | DataIngestionLogger | INFO | Generating embeddings for text of length 2336
+2026-06-13 12:17:24,230 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,230 | DataIngestionLogger | INFO | Generating embeddings for text of length 1784
+2026-06-13 12:17:24,246 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,247 | DataIngestionLogger | INFO | Generating embeddings for text of length 1534
+2026-06-13 12:17:24,263 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,263 | DataIngestionLogger | INFO | Generating embeddings for text of length 1531
+2026-06-13 12:17:24,280 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,280 | DataIngestionLogger | INFO | Generating embeddings for text of length 1714
+2026-06-13 12:17:24,296 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,297 | DataIngestionLogger | INFO | Generating embeddings for text of length 1545
+2026-06-13 12:17:24,313 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,313 | DataIngestionLogger | INFO | Generating embeddings for text of length 1556
+2026-06-13 12:17:24,330 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,330 | DataIngestionLogger | INFO | Generating embeddings for text of length 1348
+2026-06-13 12:17:24,346 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,347 | DataIngestionLogger | INFO | Generating embeddings for text of length 1970
+2026-06-13 12:17:24,363 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,364 | DataIngestionLogger | INFO | Generating embeddings for text of length 1560
+2026-06-13 12:17:24,380 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,380 | DataIngestionLogger | INFO | Generating embeddings for text of length 1497
+2026-06-13 12:17:24,397 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,397 | DataIngestionLogger | INFO | Generating embeddings for text of length 1437
+2026-06-13 12:17:24,414 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,414 | DataIngestionLogger | INFO | Generating embeddings for text of length 1450
+2026-06-13 12:17:24,430 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,430 | DataIngestionLogger | INFO | Generating embeddings for text of length 1277
+2026-06-13 12:17:24,446 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,446 | DataIngestionLogger | INFO | Generating embeddings for text of length 1464
+2026-06-13 12:17:24,463 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,463 | DataIngestionLogger | INFO | Generating embeddings for text of length 1331
+2026-06-13 12:17:24,480 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,480 | DataIngestionLogger | INFO | Generating embeddings for text of length 1941
+2026-06-13 12:17:24,497 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,497 | DataIngestionLogger | INFO | Generating embeddings for text of length 1658
+2026-06-13 12:17:24,513 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,513 | DataIngestionLogger | INFO | Generating embeddings for text of length 1733
+2026-06-13 12:17:24,530 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,530 | DataIngestionLogger | INFO | Generating embeddings for text of length 1621
+2026-06-13 12:17:24,546 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,547 | DataIngestionLogger | INFO | Generating embeddings for text of length 1473
+2026-06-13 12:17:24,563 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,563 | DataIngestionLogger | INFO | Generating embeddings for text of length 1664
+2026-06-13 12:17:24,579 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,580 | DataIngestionLogger | INFO | Generating embeddings for text of length 1830
+2026-06-13 12:17:24,596 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,596 | DataIngestionLogger | INFO | Generating embeddings for text of length 1736
+2026-06-13 12:17:24,613 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,613 | DataIngestionLogger | INFO | Generating embeddings for text of length 1802
+2026-06-13 12:17:24,629 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,629 | DataIngestionLogger | INFO | Generating embeddings for text of length 1258
+2026-06-13 12:17:24,645 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,646 | DataIngestionLogger | INFO | Generating embeddings for text of length 1672
+2026-06-13 12:17:24,662 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,662 | DataIngestionLogger | INFO | Generating embeddings for text of length 1760
+2026-06-13 12:17:24,678 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,678 | DataIngestionLogger | INFO | Generating embeddings for text of length 1875
+2026-06-13 12:17:24,694 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,694 | DataIngestionLogger | INFO | Generating embeddings for text of length 1749
+2026-06-13 12:17:24,711 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,711 | DataIngestionLogger | INFO | Generating embeddings for text of length 2214
+2026-06-13 12:17:24,727 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,727 | DataIngestionLogger | INFO | Generating embeddings for text of length 1485
+2026-06-13 12:17:24,744 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,744 | DataIngestionLogger | INFO | Generating embeddings for text of length 1619
+2026-06-13 12:17:24,760 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,760 | DataIngestionLogger | INFO | Generating embeddings for text of length 1415
+2026-06-13 12:17:24,776 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,776 | DataIngestionLogger | INFO | Generating embeddings for text of length 1358
+2026-06-13 12:17:24,792 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,792 | DataIngestionLogger | INFO | Generating embeddings for text of length 1534
+2026-06-13 12:17:24,808 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,808 | DataIngestionLogger | INFO | Generating embeddings for text of length 1183
+2026-06-13 12:17:24,824 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,824 | DataIngestionLogger | INFO | Generating embeddings for text of length 2115
+2026-06-13 12:17:24,840 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,840 | DataIngestionLogger | INFO | Generating embeddings for text of length 1587
+2026-06-13 12:17:24,856 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,857 | DataIngestionLogger | INFO | Generating embeddings for text of length 1458
+2026-06-13 12:17:24,873 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,873 | DataIngestionLogger | INFO | Generating embeddings for text of length 1828
+2026-06-13 12:17:24,890 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,890 | DataIngestionLogger | INFO | Generating embeddings for text of length 1610
+2026-06-13 12:17:24,906 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,906 | DataIngestionLogger | INFO | Generating embeddings for text of length 2161
+2026-06-13 12:17:24,923 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,923 | DataIngestionLogger | INFO | Generating embeddings for text of length 1457
+2026-06-13 12:17:24,940 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,940 | DataIngestionLogger | INFO | Generating embeddings for text of length 1298
+2026-06-13 12:17:24,956 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,956 | DataIngestionLogger | INFO | Generating embeddings for text of length 1948
+2026-06-13 12:17:24,972 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,973 | DataIngestionLogger | INFO | Generating embeddings for text of length 1631
+2026-06-13 12:17:24,989 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:24,989 | DataIngestionLogger | INFO | Generating embeddings for text of length 1942
+2026-06-13 12:17:25,005 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,005 | DataIngestionLogger | INFO | Generating embeddings for text of length 1967
+2026-06-13 12:17:25,022 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,022 | DataIngestionLogger | INFO | Generating embeddings for text of length 1572
+2026-06-13 12:17:25,041 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,041 | DataIngestionLogger | INFO | Generating embeddings for text of length 1670
+2026-06-13 12:17:25,058 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,058 | DataIngestionLogger | INFO | Generating embeddings for text of length 1608
+2026-06-13 12:17:25,074 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,074 | DataIngestionLogger | INFO | Generating embeddings for text of length 1722
+2026-06-13 12:17:25,088 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,089 | DataIngestionLogger | INFO | Generating embeddings for text of length 1612
+2026-06-13 12:17:25,103 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,103 | DataIngestionLogger | INFO | Generating embeddings for text of length 1587
+2026-06-13 12:17:25,117 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,118 | DataIngestionLogger | INFO | Generating embeddings for text of length 1758
+2026-06-13 12:17:25,132 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,132 | DataIngestionLogger | INFO | Generating embeddings for text of length 1809
+2026-06-13 12:17:25,146 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,146 | DataIngestionLogger | INFO | Generating embeddings for text of length 1999
+2026-06-13 12:17:25,162 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,162 | DataIngestionLogger | INFO | Generating embeddings for text of length 1986
+2026-06-13 12:17:25,178 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,178 | DataIngestionLogger | INFO | Generating embeddings for text of length 2013
+2026-06-13 12:17:25,193 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,193 | DataIngestionLogger | INFO | Generating embeddings for text of length 1822
+2026-06-13 12:17:25,208 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,209 | DataIngestionLogger | INFO | Generating embeddings for text of length 1935
+2026-06-13 12:17:25,224 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,224 | DataIngestionLogger | INFO | Generating embeddings for text of length 1397
+2026-06-13 12:17:25,238 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,239 | DataIngestionLogger | INFO | Generating embeddings for text of length 1790
+2026-06-13 12:17:25,254 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,254 | DataIngestionLogger | INFO | Generating embeddings for text of length 1589
+2026-06-13 12:17:25,269 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,269 | DataIngestionLogger | INFO | Generating embeddings for text of length 1630
+2026-06-13 12:17:25,284 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,284 | DataIngestionLogger | INFO | Generating embeddings for text of length 1620
+2026-06-13 12:17:25,299 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,299 | DataIngestionLogger | INFO | Generating embeddings for text of length 1647
+2026-06-13 12:17:25,315 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,315 | DataIngestionLogger | INFO | Generating embeddings for text of length 1492
+2026-06-13 12:17:25,331 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,331 | DataIngestionLogger | INFO | Generating embeddings for text of length 1985
+2026-06-13 12:17:25,347 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,348 | DataIngestionLogger | INFO | Generating embeddings for text of length 1730
+2026-06-13 12:17:25,364 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,364 | DataIngestionLogger | INFO | Generating embeddings for text of length 1615
+2026-06-13 12:17:25,381 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,381 | DataIngestionLogger | INFO | Generating embeddings for text of length 1277
+2026-06-13 12:17:25,397 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,397 | DataIngestionLogger | INFO | Generating embeddings for text of length 1419
+2026-06-13 12:17:25,414 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,414 | DataIngestionLogger | INFO | Generating embeddings for text of length 2162
+2026-06-13 12:17:25,430 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,431 | DataIngestionLogger | INFO | Generating embeddings for text of length 1819
+2026-06-13 12:17:25,447 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,447 | DataIngestionLogger | INFO | Generating embeddings for text of length 1655
+2026-06-13 12:17:25,464 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,464 | DataIngestionLogger | INFO | Generating embeddings for text of length 1601
+2026-06-13 12:17:25,480 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,480 | DataIngestionLogger | INFO | Generating embeddings for text of length 1671
+2026-06-13 12:17:25,496 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,497 | DataIngestionLogger | INFO | Generating embeddings for text of length 1692
+2026-06-13 12:17:25,513 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,513 | DataIngestionLogger | INFO | Generating embeddings for text of length 1680
+2026-06-13 12:17:25,530 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,530 | DataIngestionLogger | INFO | Generating embeddings for text of length 1688
+2026-06-13 12:17:25,546 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,547 | DataIngestionLogger | INFO | Generating embeddings for text of length 1548
+2026-06-13 12:17:25,563 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,563 | DataIngestionLogger | INFO | Generating embeddings for text of length 1424
+2026-06-13 12:17:25,580 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,580 | DataIngestionLogger | INFO | Generating embeddings for text of length 1615
+2026-06-13 12:17:25,596 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,596 | DataIngestionLogger | INFO | Generating embeddings for text of length 1673
+2026-06-13 12:17:25,613 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,613 | DataIngestionLogger | INFO | Generating embeddings for text of length 1439
+2026-06-13 12:17:25,629 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,629 | DataIngestionLogger | INFO | Generating embeddings for text of length 2131
+2026-06-13 12:17:25,647 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,647 | DataIngestionLogger | INFO | Generating embeddings for text of length 2172
+2026-06-13 12:17:25,664 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,664 | DataIngestionLogger | INFO | Generating embeddings for text of length 1756
+2026-06-13 12:17:25,680 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,680 | DataIngestionLogger | INFO | Generating embeddings for text of length 1486
+2026-06-13 12:17:25,697 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,697 | DataIngestionLogger | INFO | Generating embeddings for text of length 1734
+2026-06-13 12:17:25,714 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,714 | DataIngestionLogger | INFO | Generating embeddings for text of length 1456
+2026-06-13 12:17:25,731 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,731 | DataIngestionLogger | INFO | Generating embeddings for text of length 1468
+2026-06-13 12:17:25,747 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,748 | DataIngestionLogger | INFO | Generating embeddings for text of length 1305
+2026-06-13 12:17:25,764 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,764 | DataIngestionLogger | INFO | Generating embeddings for text of length 1741
+2026-06-13 12:17:25,781 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,781 | DataIngestionLogger | INFO | Generating embeddings for text of length 1957
+2026-06-13 12:17:25,798 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,798 | DataIngestionLogger | INFO | Generating embeddings for text of length 1676
+2026-06-13 12:17:25,814 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,814 | DataIngestionLogger | INFO | Generating embeddings for text of length 1801
+2026-06-13 12:17:25,831 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,831 | DataIngestionLogger | INFO | Generating embeddings for text of length 1824
+2026-06-13 12:17:25,847 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,848 | DataIngestionLogger | INFO | Generating embeddings for text of length 2026
+2026-06-13 12:17:25,864 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,864 | DataIngestionLogger | INFO | Generating embeddings for text of length 1689
+2026-06-13 12:17:25,881 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,881 | DataIngestionLogger | INFO | Generating embeddings for text of length 1870
+2026-06-13 12:17:25,898 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,898 | DataIngestionLogger | INFO | Generating embeddings for text of length 1788
+2026-06-13 12:17:25,914 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,914 | DataIngestionLogger | INFO | Generating embeddings for text of length 1563
+2026-06-13 12:17:25,931 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,931 | DataIngestionLogger | INFO | Generating embeddings for text of length 1710
+2026-06-13 12:17:25,947 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,947 | DataIngestionLogger | INFO | Generating embeddings for text of length 1911
+2026-06-13 12:17:25,964 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,964 | DataIngestionLogger | INFO | Generating embeddings for text of length 1077
+2026-06-13 12:17:25,980 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,981 | DataIngestionLogger | INFO | Generating embeddings for text of length 1301
+2026-06-13 12:17:25,997 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:25,997 | DataIngestionLogger | INFO | Generating embeddings for text of length 1892
+2026-06-13 12:17:26,012 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,012 | DataIngestionLogger | INFO | Generating embeddings for text of length 1966
+2026-06-13 12:17:26,027 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,027 | DataIngestionLogger | INFO | Generating embeddings for text of length 1903
+2026-06-13 12:17:26,043 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,043 | DataIngestionLogger | INFO | Generating embeddings for text of length 1575
+2026-06-13 12:17:26,057 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,057 | DataIngestionLogger | INFO | Generating embeddings for text of length 1569
+2026-06-13 12:17:26,072 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,072 | DataIngestionLogger | INFO | Generating embeddings for text of length 1529
+2026-06-13 12:17:26,088 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,088 | DataIngestionLogger | INFO | Generating embeddings for text of length 1661
+2026-06-13 12:17:26,104 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,104 | DataIngestionLogger | INFO | Generating embeddings for text of length 1638
+2026-06-13 12:17:26,120 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,120 | DataIngestionLogger | INFO | Generating embeddings for text of length 1969
+2026-06-13 12:17:26,135 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,136 | DataIngestionLogger | INFO | Generating embeddings for text of length 1282
+2026-06-13 12:17:26,150 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,150 | DataIngestionLogger | INFO | Generating embeddings for text of length 1523
+2026-06-13 12:17:26,165 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,165 | DataIngestionLogger | INFO | Generating embeddings for text of length 1838
+2026-06-13 12:17:26,180 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,180 | DataIngestionLogger | INFO | Generating embeddings for text of length 1254
+2026-06-13 12:17:26,195 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,195 | DataIngestionLogger | INFO | Generating embeddings for text of length 1664
+2026-06-13 12:17:26,210 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,210 | DataIngestionLogger | INFO | Generating embeddings for text of length 1678
+2026-06-13 12:17:26,226 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,226 | DataIngestionLogger | INFO | Generating embeddings for text of length 1250
+2026-06-13 12:17:26,242 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,242 | DataIngestionLogger | INFO | Generating embeddings for text of length 1381
+2026-06-13 12:17:26,258 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,258 | DataIngestionLogger | INFO | Generating embeddings for text of length 1565
+2026-06-13 12:17:26,274 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,274 | DataIngestionLogger | INFO | Generating embeddings for text of length 1623
+2026-06-13 12:17:26,290 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,291 | DataIngestionLogger | INFO | Generating embeddings for text of length 1616
+2026-06-13 12:17:26,306 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,306 | DataIngestionLogger | INFO | Generating embeddings for text of length 1495
+2026-06-13 12:17:26,321 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,321 | DataIngestionLogger | INFO | Generating embeddings for text of length 1519
+2026-06-13 12:17:26,336 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,336 | DataIngestionLogger | INFO | Generating embeddings for text of length 1310
+2026-06-13 12:17:26,351 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,351 | DataIngestionLogger | INFO | Generating embeddings for text of length 1695
+2026-06-13 12:17:26,366 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,366 | DataIngestionLogger | INFO | Generating embeddings for text of length 1653
+2026-06-13 12:17:26,381 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,381 | DataIngestionLogger | INFO | Generating embeddings for text of length 1762
+2026-06-13 12:17:26,397 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,397 | DataIngestionLogger | INFO | Generating embeddings for text of length 1730
+2026-06-13 12:17:26,413 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,413 | DataIngestionLogger | INFO | Generating embeddings for text of length 1710
+2026-06-13 12:17:26,429 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,429 | DataIngestionLogger | INFO | Generating embeddings for text of length 2377
+2026-06-13 12:17:26,446 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,446 | DataIngestionLogger | INFO | Generating embeddings for text of length 1987
+2026-06-13 12:17:26,463 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,463 | DataIngestionLogger | INFO | Generating embeddings for text of length 1675
+2026-06-13 12:17:26,479 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,479 | DataIngestionLogger | INFO | Generating embeddings for text of length 1714
+2026-06-13 12:17:26,496 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,496 | DataIngestionLogger | INFO | Generating embeddings for text of length 1932
+2026-06-13 12:17:26,512 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,512 | DataIngestionLogger | INFO | Generating embeddings for text of length 1589
+2026-06-13 12:17:26,527 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,527 | DataIngestionLogger | INFO | Generating embeddings for text of length 1405
+2026-06-13 12:17:26,542 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,542 | DataIngestionLogger | INFO | Generating embeddings for text of length 1904
+2026-06-13 12:17:26,556 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,557 | DataIngestionLogger | INFO | Generating embeddings for text of length 1682
+2026-06-13 12:17:26,571 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,571 | DataIngestionLogger | INFO | Generating embeddings for text of length 1536
+2026-06-13 12:17:26,586 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,586 | DataIngestionLogger | INFO | Generating embeddings for text of length 1915
+2026-06-13 12:17:26,601 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,601 | DataIngestionLogger | INFO | Generating embeddings for text of length 1595
+2026-06-13 12:17:26,616 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,616 | DataIngestionLogger | INFO | Generating embeddings for text of length 1712
+2026-06-13 12:17:26,630 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,631 | DataIngestionLogger | INFO | Generating embeddings for text of length 1805
+2026-06-13 12:17:26,645 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,646 | DataIngestionLogger | INFO | Generating embeddings for text of length 1796
+2026-06-13 12:17:26,661 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,661 | DataIngestionLogger | INFO | Generating embeddings for text of length 1809
+2026-06-13 12:17:26,675 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,675 | DataIngestionLogger | INFO | Generating embeddings for text of length 1654
+2026-06-13 12:17:26,690 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,690 | DataIngestionLogger | INFO | Generating embeddings for text of length 1234
+2026-06-13 12:17:26,705 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,705 | DataIngestionLogger | INFO | Generating embeddings for text of length 1494
+2026-06-13 12:17:26,719 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,720 | DataIngestionLogger | INFO | Generating embeddings for text of length 1494
+2026-06-13 12:17:26,734 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,734 | DataIngestionLogger | INFO | Generating embeddings for text of length 1603
+2026-06-13 12:17:26,749 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,749 | DataIngestionLogger | INFO | Generating embeddings for text of length 1526
+2026-06-13 12:17:26,764 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,764 | DataIngestionLogger | INFO | Generating embeddings for text of length 1537
+2026-06-13 12:17:26,779 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,779 | DataIngestionLogger | INFO | Generating embeddings for text of length 1444
+2026-06-13 12:17:26,794 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,794 | DataIngestionLogger | INFO | Generating embeddings for text of length 1301
+2026-06-13 12:17:26,809 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,809 | DataIngestionLogger | INFO | Generating embeddings for text of length 1358
+2026-06-13 12:17:26,824 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,824 | DataIngestionLogger | INFO | Generating embeddings for text of length 1529
+2026-06-13 12:17:26,839 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,839 | DataIngestionLogger | INFO | Generating embeddings for text of length 1618
+2026-06-13 12:17:26,853 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,853 | DataIngestionLogger | INFO | Generating embeddings for text of length 1698
+2026-06-13 12:17:26,868 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,868 | DataIngestionLogger | INFO | Generating embeddings for text of length 1804
+2026-06-13 12:17:26,883 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,883 | DataIngestionLogger | INFO | Generating embeddings for text of length 1671
+2026-06-13 12:17:26,898 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,898 | DataIngestionLogger | INFO | Generating embeddings for text of length 1401
+2026-06-13 12:17:26,913 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,913 | DataIngestionLogger | INFO | Generating embeddings for text of length 1713
+2026-06-13 12:17:26,928 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,928 | DataIngestionLogger | INFO | Generating embeddings for text of length 1563
+2026-06-13 12:17:26,944 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,944 | DataIngestionLogger | INFO | Generating embeddings for text of length 1606
+2026-06-13 12:17:26,960 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,960 | DataIngestionLogger | INFO | Generating embeddings for text of length 1715
+2026-06-13 12:17:26,975 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,975 | DataIngestionLogger | INFO | Generating embeddings for text of length 1483
+2026-06-13 12:17:26,992 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:26,992 | DataIngestionLogger | INFO | Generating embeddings for text of length 1579
+2026-06-13 12:17:27,007 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,007 | DataIngestionLogger | INFO | Generating embeddings for text of length 1357
+2026-06-13 12:17:27,022 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,022 | DataIngestionLogger | INFO | Generating embeddings for text of length 1471
+2026-06-13 12:17:27,037 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,037 | DataIngestionLogger | INFO | Generating embeddings for text of length 1122
+2026-06-13 12:17:27,052 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,052 | DataIngestionLogger | INFO | Generating embeddings for text of length 1693
+2026-06-13 12:17:27,067 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,067 | DataIngestionLogger | INFO | Generating embeddings for text of length 1825
+2026-06-13 12:17:27,082 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,083 | DataIngestionLogger | INFO | Generating embeddings for text of length 1738
+2026-06-13 12:17:27,098 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,098 | DataIngestionLogger | INFO | Generating embeddings for text of length 2177
+2026-06-13 12:17:27,114 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,114 | DataIngestionLogger | INFO | Generating embeddings for text of length 2048
+2026-06-13 12:17:27,129 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,129 | DataIngestionLogger | INFO | Generating embeddings for text of length 2042
+2026-06-13 12:17:27,145 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,145 | DataIngestionLogger | INFO | Generating embeddings for text of length 1824
+2026-06-13 12:17:27,161 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,161 | DataIngestionLogger | INFO | Generating embeddings for text of length 1736
+2026-06-13 12:17:27,177 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,178 | DataIngestionLogger | INFO | Generating embeddings for text of length 1616
+2026-06-13 12:17:27,194 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,194 | DataIngestionLogger | INFO | Generating embeddings for text of length 1671
+2026-06-13 12:17:27,210 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,210 | DataIngestionLogger | INFO | Generating embeddings for text of length 1494
+2026-06-13 12:17:27,227 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,227 | DataIngestionLogger | INFO | Generating embeddings for text of length 1466
+2026-06-13 12:17:27,243 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,243 | DataIngestionLogger | INFO | Generating embeddings for text of length 1648
+2026-06-13 12:17:27,259 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,259 | DataIngestionLogger | INFO | Generating embeddings for text of length 1733
+2026-06-13 12:17:27,276 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,276 | DataIngestionLogger | INFO | Generating embeddings for text of length 1884
+2026-06-13 12:17:27,292 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,293 | DataIngestionLogger | INFO | Generating embeddings for text of length 1600
+2026-06-13 12:17:27,309 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,309 | DataIngestionLogger | INFO | Generating embeddings for text of length 1872
+2026-06-13 12:17:27,324 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,324 | DataIngestionLogger | INFO | Generating embeddings for text of length 1935
+2026-06-13 12:17:27,340 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,340 | DataIngestionLogger | INFO | Generating embeddings for text of length 1882
+2026-06-13 12:17:27,356 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,356 | DataIngestionLogger | INFO | Generating embeddings for text of length 1613
+2026-06-13 12:17:27,372 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,372 | DataIngestionLogger | INFO | Generating embeddings for text of length 1426
+2026-06-13 12:17:27,387 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,387 | DataIngestionLogger | INFO | Generating embeddings for text of length 1519
+2026-06-13 12:17:27,402 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,402 | DataIngestionLogger | INFO | Generating embeddings for text of length 1582
+2026-06-13 12:17:27,417 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,417 | DataIngestionLogger | INFO | Generating embeddings for text of length 1568
+2026-06-13 12:17:27,432 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,432 | DataIngestionLogger | INFO | Generating embeddings for text of length 1687
+2026-06-13 12:17:27,447 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,447 | DataIngestionLogger | INFO | Generating embeddings for text of length 1467
+2026-06-13 12:17:27,462 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,463 | DataIngestionLogger | INFO | Generating embeddings for text of length 1638
+2026-06-13 12:17:27,478 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,478 | DataIngestionLogger | INFO | Generating embeddings for text of length 1819
+2026-06-13 12:17:27,494 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,494 | DataIngestionLogger | INFO | Generating embeddings for text of length 1658
+2026-06-13 12:17:27,508 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,509 | DataIngestionLogger | INFO | Generating embeddings for text of length 1462
+2026-06-13 12:17:27,524 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,524 | DataIngestionLogger | INFO | Generating embeddings for text of length 1908
+2026-06-13 12:17:27,539 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,539 | DataIngestionLogger | INFO | Generating embeddings for text of length 1500
+2026-06-13 12:17:27,555 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,555 | DataIngestionLogger | INFO | Generating embeddings for text of length 1785
+2026-06-13 12:17:27,574 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,574 | DataIngestionLogger | INFO | Generating embeddings for text of length 1594
+2026-06-13 12:17:27,592 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,592 | DataIngestionLogger | INFO | Generating embeddings for text of length 1605
+2026-06-13 12:17:27,608 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,608 | DataIngestionLogger | INFO | Generating embeddings for text of length 1404
+2026-06-13 12:17:27,623 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,623 | DataIngestionLogger | INFO | Generating embeddings for text of length 1696
+2026-06-13 12:17:27,638 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,639 | DataIngestionLogger | INFO | Generating embeddings for text of length 1634
+2026-06-13 12:17:27,654 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,654 | DataIngestionLogger | INFO | Generating embeddings for text of length 1391
+2026-06-13 12:17:27,669 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,669 | DataIngestionLogger | INFO | Generating embeddings for text of length 1473
+2026-06-13 12:17:27,684 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,684 | DataIngestionLogger | INFO | Generating embeddings for text of length 1659
+2026-06-13 12:17:27,700 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,700 | DataIngestionLogger | INFO | Generating embeddings for text of length 1679
+2026-06-13 12:17:27,715 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,715 | DataIngestionLogger | INFO | Generating embeddings for text of length 1284
+2026-06-13 12:17:27,730 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,730 | DataIngestionLogger | INFO | Generating embeddings for text of length 1593
+2026-06-13 12:17:27,746 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,746 | DataIngestionLogger | INFO | Generating embeddings for text of length 1512
+2026-06-13 12:17:27,761 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,761 | DataIngestionLogger | INFO | Generating embeddings for text of length 1504
+2026-06-13 12:17:27,777 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,777 | DataIngestionLogger | INFO | Generating embeddings for text of length 1507
+2026-06-13 12:17:27,792 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,792 | DataIngestionLogger | INFO | Generating embeddings for text of length 1539
+2026-06-13 12:17:27,808 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,808 | DataIngestionLogger | INFO | Generating embeddings for text of length 1355
+2026-06-13 12:17:27,824 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,824 | DataIngestionLogger | INFO | Generating embeddings for text of length 1800
+2026-06-13 12:17:27,840 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,840 | DataIngestionLogger | INFO | Generating embeddings for text of length 1207
+2026-06-13 12:17:27,855 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,855 | DataIngestionLogger | INFO | Generating embeddings for text of length 1773
+2026-06-13 12:17:27,871 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,871 | DataIngestionLogger | INFO | Generating embeddings for text of length 1306
+2026-06-13 12:17:27,887 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,887 | DataIngestionLogger | INFO | Generating embeddings for text of length 1754
+2026-06-13 12:17:27,903 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,903 | DataIngestionLogger | INFO | Generating embeddings for text of length 1738
+2026-06-13 12:17:27,919 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,919 | DataIngestionLogger | INFO | Generating embeddings for text of length 1598
+2026-06-13 12:17:27,934 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,935 | DataIngestionLogger | INFO | Generating embeddings for text of length 1617
+2026-06-13 12:17:27,950 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,950 | DataIngestionLogger | INFO | Generating embeddings for text of length 1582
+2026-06-13 12:17:27,965 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,965 | DataIngestionLogger | INFO | Generating embeddings for text of length 1326
+2026-06-13 12:17:27,981 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,981 | DataIngestionLogger | INFO | Generating embeddings for text of length 1784
+2026-06-13 12:17:27,997 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:27,998 | DataIngestionLogger | INFO | Generating embeddings for text of length 1683
+2026-06-13 12:17:28,014 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,014 | DataIngestionLogger | INFO | Generating embeddings for text of length 1271
+2026-06-13 12:17:28,031 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,031 | DataIngestionLogger | INFO | Generating embeddings for text of length 1747
+2026-06-13 12:17:28,048 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,048 | DataIngestionLogger | INFO | Generating embeddings for text of length 1782
+2026-06-13 12:17:28,066 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,066 | DataIngestionLogger | INFO | Generating embeddings for text of length 1411
+2026-06-13 12:17:28,083 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,083 | DataIngestionLogger | INFO | Generating embeddings for text of length 1587
+2026-06-13 12:17:28,100 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,100 | DataIngestionLogger | INFO | Generating embeddings for text of length 1553
+2026-06-13 12:17:28,116 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,116 | DataIngestionLogger | INFO | Generating embeddings for text of length 1614
+2026-06-13 12:17:28,132 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,133 | DataIngestionLogger | INFO | Generating embeddings for text of length 1569
+2026-06-13 12:17:28,150 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,150 | DataIngestionLogger | INFO | Generating embeddings for text of length 1915
+2026-06-13 12:17:28,167 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,167 | DataIngestionLogger | INFO | Generating embeddings for text of length 2275
+2026-06-13 12:17:28,183 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,184 | DataIngestionLogger | INFO | Generating embeddings for text of length 1493
+2026-06-13 12:17:28,200 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,200 | DataIngestionLogger | INFO | Generating embeddings for text of length 1829
+2026-06-13 12:17:28,217 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,217 | DataIngestionLogger | INFO | Generating embeddings for text of length 1496
+2026-06-13 12:17:28,233 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,233 | DataIngestionLogger | INFO | Generating embeddings for text of length 1757
+2026-06-13 12:17:28,250 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
+2026-06-13 12:17:28,250 | DataIngestionLogger | INFO | Generating embeddings for text of length 256
+2026-06-13 12:17:28,278 | DataIngestionLogger | INFO | Successfully generated embeddings of shape: (384,)
