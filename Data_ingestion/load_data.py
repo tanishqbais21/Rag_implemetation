@@ -98,7 +98,7 @@ class DataIngestionPipeline:
             self.log.error(f"Error splitting documents: {e}")
             raise e
     
-    def run_pipeline(self, file_path: str)-> list[np.ndarray]:
+    def run_pipeline(self, file_path: str)->tuple[list[np.ndarray],list[Document]]:
         """
         Run the data ingestion pipeline to load PDF files,generate embeddings and splitting documents.
         Args:
@@ -114,6 +114,6 @@ class DataIngestionPipeline:
             split_documents = self._split_documents(documents)
             self._load_model(self.model_name)
             numpy_embeddings = [self.generate_embeddings(doc.page_content) for doc in split_documents]
-            return numpy_embeddings
+            return numpy_embeddings,split_documents
         except Exception as e:
             self.log.error(f"Error running data ingestion pipeline: {e}")

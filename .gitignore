@@ -6,6 +6,7 @@ dist/
 wheels/
 DataIngestionLogger/
 MainLogger/
+logs/
 *.egg-info
 
 # Virtual environments
