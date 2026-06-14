@@ -113,7 +113,33 @@ class VectorStore:
             except Exception as e:
                 self.log.info(f"Errror Adding documents to vector store: {e}") 
                 raise
-
+    def get_scores(self,query_embedding:list[float],top_k:int=5,score_threshold:float=0.0)->tuple[list[float],list[str],list[dict]]:
+        """
+        Perform a similarity search in the vector store.
+        
+        Args:
+            query_embedding: The embedding of the query.
+            top_k: The number of top results to retrieve.
+            score_threshold: The minimum similarity score to consider.
+            
+        Returns:
+            A list of similarity scores.
+        """
+        self.log.info(f"Querying vector store with embedding")
+        
+        self.log.info(f"Top k: {top_k}, Score threshold: {score_threshold}")
+        try:
+            results = self.collection.query(
+                query_embeddings=query_embedding,
+                n_results=top_k,
+                include=['distances','documents','metadatas']
+            )
+            self.log.info(f"Retrieved {len(results['ids'][0])} results from vector store")
+            return results['distances'][0],results['documents'][0],results['metadatas'][0]
+        except Exception as e:
+            self.log.error(f"Error querying vector store: {str(e)}")
+            return [],[],[]
+    
                 
 
         
