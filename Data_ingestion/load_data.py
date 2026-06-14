@@ -5,6 +5,8 @@ from logging_config import AILogger
 from transformers import AutoTokenizer
 from typing import List, Dict, Any, Tuple, Optional
 from sentence_transformers import SentenceTransformer
+from tqdm import tqdm
+import time
 import os
 import numpy as np
 from pathlib import Path
@@ -33,7 +35,6 @@ class DataIngestionPipeline:
         try:
             if self.model is None:
                 raise ValueError("Model is not loaded. Please load the model before generating embeddings.")
-            self.log.info(f"Generating embeddings for text of length {len(text)}")
             embeddings = self.model.encode(text)
             return embeddings
         except Exception as e:
@@ -67,7 +68,7 @@ class DataIngestionPipeline:
                 loader = PyMuPDFLoader(str(pdf_file))
                 documents = loader.load()
                 all_documents.extend(documents)
-                return all_documents
+            return all_documents
         except Exception as e:
             self.log.error(f"Error loading PDF files: {e}")
     
@@ -92,7 +93,11 @@ class DataIngestionPipeline:
                 length_function=self._count_tokens
             )
             split_docs = text_splitter.split_documents(documents)
+            length_split_docs=len(split_docs)
+            #Removing the empty strings
+            split_docs = [doc for doc in split_docs if doc.page_content.strip()]
             self.log.info(f"Completed splitting documents. Total chunks created: {len(split_docs)}")
+            self.log.info(f"Removed {length_split_docs-len(split_docs)} empty chunks from the documents")
             return split_docs
         except Exception as e:
             self.log.error(f"Error splitting documents: {e}")
@@ -107,13 +112,20 @@ class DataIngestionPipeline:
         Returns:
             list[np.ndarray]: The generated embeddings.
         """
+        numpy_embeddings=[]
         self.log.info("Starting data ingestion pipeline.")
         try:
             documents = self._load_pdf(file_path)
-            self.log.info(f"Data ingestion pipeline completed. Loaded {len(documents)} documents.")
+            self.log.info(f"Data Loading completed. Loaded {len(documents)} documents.")
             split_documents = self._split_documents(documents)
+            self.log.info("Tokenization process started.")
             self._load_model(self.model_name)
-            numpy_embeddings = [self.generate_embeddings(doc.page_content) for doc in split_documents]
+            self.log.info("Tokenization process completed.")
+           
+            for chunk in tqdm(split_documents, desc="Generating Embeddings", unit="chunk"):
+                embeddings=self.generate_embeddings(chunk.page_content)
+                numpy_embeddings.append(embeddings)
+            self.log.info(f"Data ingestion pipeline completed.")
             return numpy_embeddings,split_documents
         except Exception as e:
             self.log.error(f"Error running data ingestion pipeline: {e}")

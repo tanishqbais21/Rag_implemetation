@@ -45,8 +45,6 @@ class VectorStore:
             if len(documents)!=len(embeddings):
                 raise ValueError("Number of documents must match number of embeddings")
                 self.log.error(f"Mismatch in number of documents and embeddings Length of documents: {len(documents)} Length of Embeddings: {len(embeddings)}")
-            
-            self.log.info(f"Adding {len(documents)} to the vector store")
 
             #prepare data for chroma DB
             ids=[]
@@ -96,7 +94,8 @@ class VectorStore:
             else:
                 self.log.info(f"No duplicate ids found")
                 self.log.info(f"Adding {len(filtered_ids)} new documents to the vector store")
-
+            
+            #all are duplicates then return    
             if not filtered_ids:
                 self.log.info("No new documents to add to the vector store (all are duplicates).")
                 self.log.info(f"Total documents in collection {self.collection.count()}")
