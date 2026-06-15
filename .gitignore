@@ -7,7 +7,6 @@ wheels/
 DataIngestionLogger/
 MainLogger/
 logs/
-*FLOW_DOCUMENTATION.md
 *.egg-info
 
 # Virtual environments
