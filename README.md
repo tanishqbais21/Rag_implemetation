@@ -14,18 +14,27 @@ A robust, local-first Retrieval-Augmented Generation (RAG) pipeline built from s
 ## Project Structure
 ```text
 Project_1/
-├── main.py                     # Application entry point orchestrating ingestion and retrieval
-├── test_main.py                # Unit tests for the main application
-├── Data_ingestion/             
-│   ├── load_data.py            # Document loading, text splitting, and embedding generation
-│   └── Vector_db.py            # ChromaDB integration, document indexing, and similarity search
-├── Retriver/                   
-│   └── retrive.py              # Query embedding, semantic search, and prompt formatting
-├── data/                       # Directory to place source documents (.pdf, .txt, .docx)
-│   └── vector_store/           # Persistent ChromaDB storage (auto-generated)
-├── logs/                       # Rotating logs output directory (auto-generated)
-├── logging_config.py           # Logging utility configurations
-└── requirements.txt            # Python dependencies
+├── src/
+│   └── rag_app/                 # Main application package
+│       ├── ingestion/
+│       │   ├── load_data.py     # Document loading, text splitting, and embedding generation
+│       │   └── vector_db.py     # ChromaDB integration, document indexing, and similarity search
+│       ├── retriever/
+│       │   └── retrieve.py      # Query embedding, semantic search, and prompt formatting
+│       └── utils/
+│           └── logging_config.py# Logging utility configurations
+├── tests/
+│   └── test_main.py             # Unit tests for the main application
+├── docs/
+│   └── FLOW_DOCUMENTATION.md    # Detailed execution flow
+├── notebooks/                   # Jupyter notebooks
+├── data/                        # Directory to place source documents (.pdf, .txt, .docx)
+│   └── vector_store/            # Persistent ChromaDB storage (auto-generated)
+├── logs/                        # Rotating logs output directory (auto-generated)
+├── main.py                      # Application entry point orchestrating ingestion and retrieval
+├── config.json                  # Central configuration
+├── requirements.txt             # Python dependencies
+└── README.md
 ```
 
 ## Setup & Installation
@@ -73,15 +82,15 @@ The project includes production-ready unit tests to verify the core application 
 
 Run the tests using `pytest`:
 ```bash
-pytest test_main.py
+pytest tests/test_main.py
 ```
 
 ## Core Components Breakdown
 
-- **`DataIngestionPipeline` (load_data.py)**: Scans a directory for supported files, utilizes appropriate loaders (`PyMuPDFLoader`, `TextLoader`, `Docx2txtLoader`), chunks the extracted text, and generates 384-dimensional embeddings.
-- **`VectorStore` (Vector_db.py)**: Manages the connection to the local ChromaDB. Includes `_add_data()` which gracefully handles duplicates by comparing document IDs, and `get_scores()` which returns similarity scores and metadata for user queries.
-- **`RAGRtriever` (retrive.py)**: Takes a raw user query, fetches its vector representation, retrieves matching snippets from the database, and creates an optimized prompt string for an LLM that explicitly demands citations and prevents external knowledge usage.
-- **`AILogger` (logging_config.py)**: Provides clean, structured logging out-of-the-box. Logs are saved inside the `logs/` directory and capped at 1MB per file, rotating up to 3 backup files.
+- **`DataIngestionPipeline` (src/rag_app/ingestion/load_data.py)**: Scans a directory for supported files, utilizes appropriate loaders (`PyMuPDFLoader`, `TextLoader`, `Docx2txtLoader`), chunks the extracted text, and generates 384-dimensional embeddings.
+- **`VectorStore` (src/rag_app/ingestion/vector_db.py)**: Manages the connection to the local ChromaDB. Includes `_add_data()` which gracefully handles duplicates by comparing document IDs, and `get_scores()` which returns similarity scores and metadata for user queries.
+- **`RAGRetriever` (src/rag_app/retriever/retrieve.py)**: Takes a raw user query, fetches its vector representation, retrieves matching snippets from the database, and creates an optimized prompt string for an LLM that explicitly demands citations and prevents external knowledge usage.
+- **`AILogger` (src/rag_app/utils/logging_config.py)**: Provides clean, structured logging out-of-the-box. Logs are saved inside the `logs/` directory and capped at 1MB per file, rotating up to 3 backup files.
 
 ## Future Enhancements
 - Integration of a local or cloud-based LLM instance (e.g., Llama.cpp, OpenAI, Gemini) to natively process the generated prompts.
