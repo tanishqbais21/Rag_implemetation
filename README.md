@@ -82,3 +82,6 @@ pytest test_main.py
 ## Future Enhancements
 - Integration of a local or cloud-based LLM instance (e.g., Llama.cpp, OpenAI, Gemini) to natively process the generated prompts.
 - UI layer (e.g., Streamlit, Gradio) to upload files and ask questions interactively.
+
+# Rag_implemetation
+A robust, local-first Retrieval-Augmented Generation (RAG) pipeline built from scratch using Python, LangChain, ChromaDB, and HuggingFace Sentence Transformers.
