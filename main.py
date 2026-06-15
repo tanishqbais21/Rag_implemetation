@@ -23,8 +23,8 @@ def run_ingestion(load_pdf_path: str, vector_store: vector_db.VectorStore) -> lo
         # Initialize pipeline with the vector store
         ingestion = load_data.DataIngestionPipeline(vector_store=vector_store)
         
-        # Run the pipeline (can be uncommented or conditionally executed based on arguments)
-        # ingestion.run_pipeline(load_pdf_path)
+        # Run the pipeline
+        ingestion.run_pipeline(load_pdf_path)
         
         logger.info("Data ingestion pipeline configured/completed successfully.")
         return ingestion
