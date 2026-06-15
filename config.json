@@ -1,0 +1,19 @@
+{
+  "app": {
+    "pdf_path": "data",
+    "query": "What is the name of the three Main Character?"
+  },
+  "vector_db": {
+    "collections_name": "PDFDocuments",
+    "persistent_directory": "data/vector_store"
+  },
+  "retriever": {
+    "top_k": 10,
+    "score_threshold": 0.2
+  },
+  "ingestion": {
+    "model_name": "all-MiniLM-L6-v2",
+    "chunk_size": 1000,
+    "chunk_overlap": 200
+  }
+}

@@ -1,13 +1,14 @@
 import argparse
-from Data_ingestion import Vector_db
-from Data_ingestion import load_data
-from logging_config import AILogger
-from Retriver import retrive
+import json
+from src.rag_app.ingestion import vector_db
+from src.rag_app.ingestion import load_data
+from src.rag_app.utils.logging_config import AILogger
+from src.rag_app.retriever import retrieve
 
 # Initialize the logger for the main application
 logger = AILogger(name="MainLogger", log_dir="logs/MainLogger").logger
 
-def run_ingestion(load_pdf_path: str, vector_store: Vector_db.VectorStore) -> load_data.DataIngestionPipeline:
+def run_ingestion(load_pdf_path: str, vector_store: vector_db.VectorStore) -> load_data.DataIngestionPipeline:
     """
     Initializes the data ingestion pipeline and runs it on the given path.
     
@@ -31,7 +32,7 @@ def run_ingestion(load_pdf_path: str, vector_store: Vector_db.VectorStore) -> lo
         logger.error(f"Failed during data ingestion setup: {e}")
         raise
 
-def run_retrieval(query: str, vector_store: Vector_db.VectorStore, ingestion_object: load_data.DataIngestionPipeline) -> str:
+def run_retrieval(query: str, vector_store: vector_db.VectorStore, ingestion_object: load_data.DataIngestionPipeline) -> str:
     """
     Initializes the RAG retriever and fetches the answer for the given query.
     
@@ -44,8 +45,8 @@ def run_retrieval(query: str, vector_store: Vector_db.VectorStore, ingestion_obj
         str: The retrieved response/answer.
     """
     try:
-        # Note: maintaining the original typo "injestion_object" as it's defined in retrive.py
-        retriever = retrive.RAGRtriever(vector_store=vector_store, injestion_object=ingestion_object)
+        # Note: maintaining the original typo "injestion_object" as it's defined in retrive.py (now fixed)
+        retriever = retrieve.RAGRetriever(vector_store=vector_store, ingestion_object=ingestion_object)
         
         # Retrieve the answer
         response = retriever.get_answer(query)
@@ -61,10 +62,11 @@ def main(pdf_path: str, query: str):
     logger.info("Starting Application...")
     
     # Step 1: Initialize the vector store
-    vector_store = Vector_db.VectorStore()
+    vector_store = vector_db.VectorStore()
     
     # Step 2: Configure/Run Data Ingestion
     ingestion = run_ingestion(pdf_path, vector_store)
+    ingestion.run_pipeline(pdf_path)
     
     # Step 3: Run Retrieval to get the answer for the query
     response = run_retrieval(query, vector_store, ingestion)
@@ -77,18 +79,22 @@ def main(pdf_path: str, query: str):
     return response
 
 if __name__ == "__main__":
+    # Load default configuration
+    with open("config.json", "r") as f:
+        config = json.load(f)
+
     # Use argparse to allow dynamic inputs instead of hardcoding values
     parser = argparse.ArgumentParser(description="Run RAG Pipeline")
     parser.add_argument(
         "--pdf_path", 
         type=str, 
-        default="data", 
+        default=config.get("app", {}).get("pdf_path", "data"), 
         help="Path to the PDF data directory"
     )
     parser.add_argument(
         "--query", 
         type=str, 
-        default="What is the name of the three Main Character?", 
+        default=config.get("app", {}).get("query", "What is the name of the three Main Character?"), 
         help="Query to ask the RAG model"
     )
     

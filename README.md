@@ -45,23 +45,27 @@ Project_1/
 3. **Provide Data:**
    Create a folder named `data` in the root directory (if it doesn't exist) and place your `.pdf`, `.txt`, or `.docx` files inside.
 
+## Documentation
+For a minute-by-minute breakdown of the exact program flow, including example inputs and outputs, please see [FLOW_DOCUMENTATION.md](FLOW_DOCUMENTATION.md).
+
 ## Usage
 
-### 1. Data Ingestion & Querying Pipeline
-You can run the entire pipeline directly from `main.py`. This script will initialize the vector store, configure the ingestion pipeline, and execute a query.
+### Configuration
+The pipeline uses a central `config.json` file where you can define default parameters, such as chunk size, vector search thresholds (`top_k`, `score_threshold`), and embedding models. These defaults are loaded dynamically when running the pipeline.
 
-You can use command-line arguments to specify the data directory and your query:
+### Running the Pipeline
+You can run the entire pipeline directly from `main.py`. This script will initialize the vector store, smartly configure the ingestion pipeline, and execute a query.
 
 ```bash
-# Run with default arguments
+# Run with default arguments (from config.json)
 python main.py
 
 # Run with custom arguments
 python main.py --pdf_path "data" --query "What is the name of the three Main Character?"
 ```
 
-**Note on Ingestion:** 
-In `main.py`, the line `ingestion.run_pipeline(load_pdf_path)` is currently commented out to avoid re-ingesting documents if they are already stored. Uncomment it when you add new documents to the `data/` folder. The `VectorStore` automatically ignores exact duplicate entries.
+**Smart Data Ingestion:**
+The ingestion pipeline uses a local tracker (`data/.file_tracker.json`) to monitor file modifications. It automatically detects if a file is newly added or modified, and will strictly process only those changed files to save time and compute. Unchanged files are seamlessly skipped.
 
 ## Testing
 
